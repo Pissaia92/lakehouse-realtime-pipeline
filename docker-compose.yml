@@ -38,26 +38,7 @@ services:
       ZOOKEEPER_TICK_TIME: 2000
     networks:
       - lakehouse-net
-
-  debezium:
-    image: debezium/connect:latest
-    depends_on:
-      - kafka
-    ports:
-      - "8083:8083"
-    environment:
-      CONNECT_BOOTSTRAP_SERVERS: kafka:9092
-      CONNECT_GROUP_ID: debezium-group
-      CONNECT_CONFIG_STORAGE_TOPIC: connect-configs
-      CONNECT_OFFSET_STORAGE_TOPIC: connect-offsets
-      CONNECT_STATUS_STORAGE_TOPIC: connect-status
-      CONNECT_KEY_CONVERTER: org.apache.kafka.connect.storage.StringConverter
-      CONNECT_VALUE_CONVERTER: io.debezium.json.JsonValueConverter
-      CONNECT_INTERNAL_KEY_CONVERTER: org.apache.kafka.connect.storage.StringConverter
-      CONNECT_INTERNAL_VALUE_CONVERTER: io.debezium.json.JsonValueConverter
-    networks:
-      - lakehouse-net
-
+  
   flink:
     image: flink:1.18-scala_2.12
     ports:
@@ -183,3 +164,17 @@ services:
 networks:
   lakehouse-net:
     driver: bridge
+
+generator:
+  image: python:3.12-slim
+  depends_on:
+    - kafka
+  volumes:
+    - ./src/ingestion:/app
+  command: >
+    bash -c "
+    pip install kafka-python &&
+    python3 /app/generate_sample_data.py
+    "
+  networks:
+    - lakehouse-net    
