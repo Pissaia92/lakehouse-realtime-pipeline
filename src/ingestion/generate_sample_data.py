@@ -1,9 +1,17 @@
 import random
 import time
-from kafka import KafkaProducer
 import json
+from confluent_kafka import Producer
 
-producer = KafkaProducer(bootstrap_servers='kafka:9092', value_serializer=lambda v: json.dumps(v).encode('utf-8'))
+conf = {
+    'bootstrap.servers': 'kafka:9092',
+}
+
+producer = Producer(conf)
+
+producer.produce("orders", value="hello world")
+producer.flush()
+
 
 topic = 'orders.orders_server.public.orders'
 
