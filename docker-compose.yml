@@ -1,3 +1,5 @@
+version: '3.8'
+
 services:
   minio:
     image: minio/minio:latest
@@ -14,20 +16,18 @@ services:
       - lakehouse-net
 
   kafka:
-    image: confluentinc/cp-kafka:7.7.0
-    depends_on:
-      - minio
+    image: bitnami/kafka:latest
+    environment:
+      KAFKA_CFG_PROCESS_ROLES: "controller,broker"
+      KAFKA_CFG_NODE_ID: "1"
+      KAFKA_CFG_LISTENER_SECURITY_PROTOCOL_MAP: "CONTROLLER:PLAINTEXT,PLAINTEXT:PLAINTEXT"
+      KAFKA_CFG_LISTENERS: "PLAINTEXT://0.0.0.0:9092,CONTROLLER://0.0.0.0:9093"
+      KAFKA_CFG_ADVERTISED_LISTENERS: "PLAINTEXT://kafka:9092"
+      KAFKA_CFG_CONTROLLER_LISTENER_NAMES: "CONTROLLER"
+      KAFKA_CFG_CONTROLLER_QUORUM_VOTERS: "1@kafka:9093"
+      KAFKA_CFG_AUTO_CREATE_TOPICS_ENABLE: "true"
     ports:
       - "9092:9092"
-      - "9093:9093"
-    environment:
-      KAFKA_BROKER_ID: 1
-      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
-      KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092
-      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092
-      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
-      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
-      KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
     networks:
       - lakehouse-net
 
@@ -45,18 +45,19 @@ services:
       dockerfile: Dockerfile.generator
     depends_on:
       - kafka
-    volumes:
-      - ./src/ingestion:/app
     networks:
       - lakehouse-net
 
   flink:
     image: flink:1.18-scala_2.12
-    ports:
-      - "8081:8081"
     depends_on:
       - kafka
-    command: jobmanager start-distributed
+    ports:
+      - "8081:8081"
+    command: >
+      /opt/flink/bin/jobmanager.sh start-foreground
+    volumes:
+      - ./src/processing/flink_sql_job.sql:/opt/flink/examples/sql-job.sql
     networks:
       - lakehouse-net
 
@@ -69,20 +70,18 @@ services:
       - lakehouse-net
 
   dbt:
-    image: ghcr.io/dbt-labs/dbt-core:latest
+    image: xemuliam/dbt:1.10-duckdb
     depends_on:
       - minio
     working_dir: /app
     volumes:
       - ./src/transformations/dbt:/app
-    command: >
-      bash -c "
-      dbt deps &&
-      dbt run
-      "
+    stdin_open: true
+    tty: true
+    command: tail -f /dev/null
     environment:
       DBT_PROFILES_DIR: /app
-      DBT_TARGET: prod
+      DBT_TARGET: dev
       AWS_ACCESS_KEY_ID: minioadmin
       AWS_SECRET_ACCESS_KEY: minioadmin
       AWS_ENDPOINT_URL: http://minio:9000
@@ -92,10 +91,10 @@ services:
   duckdb:
     build:
       context: ./docker/duckdb
-    ports:
-      - "8080:8080"
     depends_on:
       - minio
+    ports:
+      - "8080:8080"
     networks:
       - lakehouse-net
 
@@ -107,29 +106,27 @@ services:
       - '--config.file=/etc/prometheus/prometheus.yml'
     environment:
       - PROMETHEUS_CONFIG_FILE=/etc/prometheus/prometheus.yml
-    # volumes:
-    #   - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
     networks:
       - lakehouse-net
 
   grafana:
     image: grafana/grafana:10.0.0
-    ports:
-      - "3000:3000"
     depends_on:
       - prometheus
+    ports:
+      - "3000:3000"
     volumes:
       - ./prometheus/grafana_dashboard.json:/var/lib/grafana/dashboards/iceberg.json
     networks:
       - lakehouse-net
 
   loki:
-  image: grafana/loki:2.9.0
-  command: -config.file=/etc/loki/local-config.yaml
-  ports:
-    - "3100:3100"
-  networks:
-    - lakehouse-net
+    image: grafana/loki:2.9.0
+    command: -config.file=/etc/loki/local-config.yaml
+    ports:
+      - "3100:3100"
+    networks:
+      - lakehouse-net
 
   jaeger:
     image: jaegertracing/all-in-one:1.32
@@ -144,6 +141,20 @@ services:
     ports:
       - "6379:6379"
       - "6380:6380"
+    networks:
+      - lakehouse-net
+
+  loader:
+    image: python:3.12-slim
+    depends_on:
+      - kafka
+    command: >
+      bash -c "
+      pip install pandas kafka-python &&
+      python3 /app/load_sample_data.py
+      "
+    volumes:
+      - ./src/ingestion:/app
     networks:
       - lakehouse-net
 

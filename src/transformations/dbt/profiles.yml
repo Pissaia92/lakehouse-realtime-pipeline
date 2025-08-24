@@ -1,13 +1,8 @@
-prod:
+lakehouse_dbt:
   target: dev
   outputs:
     dev:
-      type: s3
+      type: duckdb
+      path: /app/target/dev.duckdb
       schema: lakehouse
       threads: 4
-      region: us-east-1
-      endpoint_url: http://minio:9000
-      access_key_id: minioadmin
-      secret_access_key: minioadmin
-      bucket: iceberg-data
-      profile: default

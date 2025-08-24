@@ -2,7 +2,10 @@ CREATE TABLE orders_raw (
   order_id BIGINT,
   customer_id BIGINT,
   amount DOUBLE,
-  created_at TIMESTAMP(3)
+  created_at TIMESTAMP(3),
+  status STRING,
+  region STRING,
+  payment_method STRING
 ) WITH (
   'connector' = 'kafka',
   'topic' = 'orders.orders_server.public.orders',
@@ -15,6 +18,9 @@ CREATE TABLE orders_curated (
   customer_id BIGINT,
   amount DOUBLE,
   created_at TIMESTAMP(3),
+  status STRING,
+  region STRING,
+  payment_method STRING,
   value_segment STRING
 ) WITH (
   'connector' = 'iceberg',
@@ -24,6 +30,6 @@ CREATE TABLE orders_curated (
 );
 
 INSERT INTO orders_curated
-SELECT order_id, customer_id, amount, created_at,
+SELECT order_id, customer_id, amount, created_at, status, region, payment_method,
        CASE WHEN amount > 100 THEN 'High' ELSE 'Low' END AS value_segment
 FROM orders_raw;

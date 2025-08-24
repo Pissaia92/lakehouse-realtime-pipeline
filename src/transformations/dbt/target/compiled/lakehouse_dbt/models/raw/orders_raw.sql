@@ -1,3 +1,3 @@
-{{ config(materialized='table') }}
+
 SELECT *
 FROM lakehouse_raw.sample_orders

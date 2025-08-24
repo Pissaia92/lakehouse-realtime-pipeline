@@ -1,0 +1,1001 @@
+order_id,customer_id,amount,created_at,status,region,payment_method
+1000,22,423.65,2025-08-24 15:00:00,delivered,North,PayPal
+1001,30,309.76,2025-08-24 15:00:01,delivered,North,PayPal
+1002,64,236.14,2025-08-24 15:00:02,delivered,East,Bank Transfer
+1003,94,412.01,2025-08-24 15:00:03,delivered,North,Credit Card
+1004,27,462.6,2025-08-24 15:00:04,pending,North,Credit Card
+1005,11,185.64,2025-08-24 15:00:05,shipped,South,PayPal
+1006,92,260.38,2025-08-24 15:00:06,shipped,South,Credit Card
+1007,25,451.55,2025-08-24 15:00:07,pending,West,Credit Card
+1008,34,263.57,2025-08-24 15:00:08,pending,West,Credit Card
+1009,35,194.04,2025-08-24 15:00:09,delivered,South,PayPal
+1010,89,22.86,2025-08-24 15:00:10,pending,South,PayPal
+1011,10,153.96,2025-08-24 15:00:11,delivered,West,PayPal
+1012,44,27.46,2025-08-24 15:00:12,shipped,West,Bank Transfer
+1013,1,331.34,2025-08-24 15:00:13,shipped,East,Credit Card
+1014,92,186.74,2025-08-24 15:00:14,pending,East,Bank Transfer
+1015,96,81.26,2025-08-24 15:00:15,delivered,West,Credit Card
+1016,67,386.5,2025-08-24 15:00:16,pending,North,PayPal
+1017,68,124.56,2025-08-24 15:00:17,delivered,East,Credit Card
+1018,97,132.32,2025-08-24 15:00:18,shipped,South,Credit Card
+1019,4,271.39,2025-08-24 15:00:19,pending,West,Credit Card
+1020,99,162.9,2025-08-24 15:00:20,pending,North,Bank Transfer
+1021,88,141.55,2025-08-24 15:00:21,delivered,East,Bank Transfer
+1022,38,378.98,2025-08-24 15:00:22,delivered,North,Credit Card
+1023,97,298.62,2025-08-24 15:00:23,pending,East,Bank Transfer
+1024,27,389.18,2025-08-24 15:00:24,delivered,East,Credit Card
+1025,6,471.58,2025-08-24 15:00:25,pending,North,Credit Card
+1026,60,175.15,2025-08-24 15:00:26,delivered,South,Bank Transfer
+1027,5,275.96,2025-08-24 15:00:27,shipped,East,Credit Card
+1028,8,434.19,2025-08-24 15:00:28,pending,West,PayPal
+1029,6,235.19,2025-08-24 15:00:29,delivered,East,PayPal
+1030,5,10.55,2025-08-24 15:00:30,pending,East,Credit Card
+1031,52,101.74,2025-08-24 15:00:31,delivered,North,Bank Transfer
+1032,10,37.7,2025-08-24 15:00:32,pending,West,Credit Card
+1033,13,74.3,2025-08-24 15:00:33,delivered,West,Bank Transfer
+1034,74,311.12,2025-08-24 15:00:34,shipped,South,PayPal
+1035,20,347.17,2025-08-24 15:00:35,pending,West,PayPal
+1036,6,79.44,2025-08-24 15:00:36,pending,East,Bank Transfer
+1037,94,335.82,2025-08-24 15:00:37,delivered,North,Bank Transfer
+1038,17,296.8,2025-08-24 15:00:38,delivered,South,PayPal
+1039,55,470.54,2025-08-24 15:00:39,pending,South,Bank Transfer
+1040,8,82.72,2025-08-24 15:00:40,pending,East,Credit Card
+1041,33,484.62,2025-08-24 15:00:41,pending,North,Bank Transfer
+1042,87,187.76,2025-08-24 15:00:42,shipped,East,Bank Transfer
+1043,91,345.91,2025-08-24 15:00:43,shipped,South,Credit Card
+1044,51,461.92,2025-08-24 15:00:44,delivered,East,PayPal
+1045,69,381.16,2025-08-24 15:00:45,pending,South,PayPal
+1046,89,392.26,2025-08-24 15:00:46,shipped,West,Bank Transfer
+1047,64,270.95,2025-08-24 15:00:47,pending,North,PayPal
+1048,62,273.75,2025-08-24 15:00:48,delivered,West,Credit Card
+1049,92,335.12,2025-08-24 15:00:49,pending,South,Credit Card
+1050,95,460.09,2025-08-24 15:00:50,shipped,South,Credit Card
+1051,48,356.62,2025-08-24 15:00:51,pending,East,Credit Card
+1052,38,331.4,2025-08-24 15:00:52,pending,West,Bank Transfer
+1053,65,75.62,2025-08-24 15:00:53,delivered,East,Bank Transfer
+1054,35,390.76,2025-08-24 15:00:54,pending,West,Credit Card
+1055,37,302.57,2025-08-24 15:00:55,delivered,West,Bank Transfer
+1056,69,349.72,2025-08-24 15:00:56,pending,North,PayPal
+1057,70,91.06,2025-08-24 15:00:57,shipped,West,PayPal
+1058,24,158.0,2025-08-24 15:00:58,delivered,West,PayPal
+1059,44,411.43,2025-08-24 15:00:59,delivered,South,Credit Card
+1060,14,50.19,2025-08-24 15:01:00,delivered,North,Bank Transfer
+1061,75,355.02,2025-08-24 15:01:01,shipped,West,Bank Transfer
+1062,46,418.56,2025-08-24 15:01:02,pending,South,Credit Card
+1063,13,284.54,2025-08-24 15:01:03,delivered,North,Credit Card
+1064,56,380.2,2025-08-24 15:01:04,shipped,East,Bank Transfer
+1065,21,253.69,2025-08-24 15:01:05,delivered,West,Bank Transfer
+1066,98,169.03,2025-08-24 15:01:06,delivered,West,Bank Transfer
+1067,44,166.54,2025-08-24 15:01:07,pending,West,Credit Card
+1068,74,313.25,2025-08-24 15:01:08,delivered,West,PayPal
+1069,71,335.7,2025-08-24 15:01:09,shipped,East,Bank Transfer
+1070,35,151.78,2025-08-24 15:01:10,delivered,East,Bank Transfer
+1071,79,343.89,2025-08-24 15:01:11,delivered,South,PayPal
+1072,63,133.91,2025-08-24 15:01:12,pending,East,Credit Card
+1073,2,322.29,2025-08-24 15:01:13,pending,West,Credit Card
+1074,88,86.36,2025-08-24 15:01:14,pending,South,Credit Card
+1075,63,417.94,2025-08-24 15:01:15,delivered,West,PayPal
+1076,23,256.61,2025-08-24 15:01:16,pending,North,Bank Transfer
+1077,6,116.2,2025-08-24 15:01:17,delivered,South,Bank Transfer
+1078,75,320.25,2025-08-24 15:01:18,delivered,West,Credit Card
+1079,66,203.38,2025-08-24 15:01:19,pending,West,PayPal
+1080,78,492.09,2025-08-24 15:01:20,delivered,North,Bank Transfer
+1081,10,268.35,2025-08-24 15:01:21,shipped,West,Bank Transfer
+1082,80,180.89,2025-08-24 15:01:22,shipped,East,PayPal
+1083,19,237.51,2025-08-24 15:01:23,pending,North,Credit Card
+1084,4,391.26,2025-08-24 15:01:24,pending,West,PayPal
+1085,22,22.55,2025-08-24 15:01:25,shipped,East,Bank Transfer
+1086,84,111.67,2025-08-24 15:01:26,shipped,North,Credit Card
+1087,45,155.85,2025-08-24 15:01:27,pending,North,Credit Card
+1088,53,332.94,2025-08-24 15:01:28,delivered,West,Bank Transfer
+1089,48,410.06,2025-08-24 15:01:29,pending,East,Bank Transfer
+1090,88,225.12,2025-08-24 15:01:30,delivered,East,Credit Card
+1091,97,432.56,2025-08-24 15:01:31,pending,South,Credit Card
+1092,89,73.59,2025-08-24 15:01:32,shipped,North,PayPal
+1093,13,141.76,2025-08-24 15:01:33,delivered,South,Credit Card
+1094,25,279.54,2025-08-24 15:01:34,delivered,East,PayPal
+1095,82,396.3,2025-08-24 15:01:35,shipped,East,PayPal
+1096,55,485.08,2025-08-24 15:01:36,delivered,West,Bank Transfer
+1097,32,295.83,2025-08-24 15:01:37,shipped,East,PayPal
+1098,30,489.56,2025-08-24 15:01:38,shipped,East,Credit Card
+1099,18,52.9,2025-08-24 15:01:39,shipped,East,Credit Card
+1100,18,470.44,2025-08-24 15:01:40,pending,North,Bank Transfer
+1101,43,245.89,2025-08-24 15:01:41,pending,East,Credit Card
+1102,68,170.17,2025-08-24 15:01:42,shipped,North,Bank Transfer
+1103,66,361.02,2025-08-24 15:01:43,pending,North,PayPal
+1104,48,257.47,2025-08-24 15:01:44,pending,West,Credit Card
+1105,7,486.69,2025-08-24 15:01:45,pending,East,Credit Card
+1106,32,196.76,2025-08-24 15:01:46,pending,North,PayPal
+1107,35,453.24,2025-08-24 15:01:47,pending,North,Credit Card
+1108,99,388.12,2025-08-24 15:01:48,pending,South,Bank Transfer
+1109,31,69.13,2025-08-24 15:01:49,pending,West,PayPal
+1110,42,393.59,2025-08-24 15:01:50,delivered,West,Bank Transfer
+1111,43,46.37,2025-08-24 15:01:51,pending,South,PayPal
+1112,57,190.06,2025-08-24 15:01:52,pending,North,Bank Transfer
+1113,25,485.09,2025-08-24 15:01:53,shipped,North,Credit Card
+1114,65,389.51,2025-08-24 15:01:54,pending,North,PayPal
+1115,46,256.76,2025-08-24 15:01:55,delivered,South,PayPal
+1116,97,344.42,2025-08-24 15:01:56,pending,West,PayPal
+1117,93,115.59,2025-08-24 15:01:57,delivered,West,Bank Transfer
+1118,81,188.77,2025-08-24 15:01:58,shipped,West,Credit Card
+1119,88,367.35,2025-08-24 15:01:59,pending,South,Bank Transfer
+1120,80,491.89,2025-08-24 15:02:00,pending,South,PayPal
+1121,33,359.01,2025-08-24 15:02:01,delivered,South,Bank Transfer
+1122,70,363.64,2025-08-24 15:02:02,delivered,East,PayPal
+1123,52,68.73,2025-08-24 15:02:03,shipped,North,PayPal
+1124,79,119.89,2025-08-24 15:02:04,pending,West,PayPal
+1125,61,10.79,2025-08-24 15:02:05,pending,South,PayPal
+1126,46,384.38,2025-08-24 15:02:06,shipped,South,Credit Card
+1127,32,176.34,2025-08-24 15:02:07,delivered,South,PayPal
+1128,32,410.08,2025-08-24 15:02:08,delivered,South,PayPal
+1129,90,223.64,2025-08-24 15:02:09,pending,South,Credit Card
+1130,30,60.19,2025-08-24 15:02:10,pending,South,PayPal
+1131,26,75.51,2025-08-24 15:02:11,shipped,North,Bank Transfer
+1132,9,65.72,2025-08-24 15:02:12,pending,East,Credit Card
+1133,46,400.57,2025-08-24 15:02:13,pending,North,Credit Card
+1134,46,345.01,2025-08-24 15:02:14,pending,South,PayPal
+1135,68,238.28,2025-08-24 15:02:15,pending,West,Credit Card
+1136,69,80.91,2025-08-24 15:02:16,delivered,North,Credit Card
+1137,31,168.67,2025-08-24 15:02:17,delivered,West,PayPal
+1138,77,129.98,2025-08-24 15:02:18,delivered,West,Credit Card
+1139,6,477.09,2025-08-24 15:02:19,pending,North,PayPal
+1140,34,408.53,2025-08-24 15:02:20,delivered,West,Credit Card
+1141,90,201.4,2025-08-24 15:02:21,delivered,North,Bank Transfer
+1142,44,70.9,2025-08-24 15:02:22,pending,East,Bank Transfer
+1143,70,139.73,2025-08-24 15:02:23,pending,West,PayPal
+1144,71,15.92,2025-08-24 15:02:24,pending,South,Bank Transfer
+1145,68,98.36,2025-08-24 15:02:25,delivered,North,PayPal
+1146,36,99.57,2025-08-24 15:02:26,delivered,South,Bank Transfer
+1147,93,455.11,2025-08-24 15:02:27,delivered,West,Credit Card
+1148,79,230.48,2025-08-24 15:02:28,shipped,East,Bank Transfer
+1149,7,445.41,2025-08-24 15:02:29,delivered,East,Credit Card
+1150,65,403.7,2025-08-24 15:02:30,shipped,East,Credit Card
+1151,45,31.53,2025-08-24 15:02:31,pending,West,Bank Transfer
+1152,31,100.07,2025-08-24 15:02:32,delivered,East,Credit Card
+1153,20,348.83,2025-08-24 15:02:33,delivered,South,Credit Card
+1154,95,380.8,2025-08-24 15:02:34,shipped,North,PayPal
+1155,91,38.32,2025-08-24 15:02:35,pending,West,PayPal
+1156,41,490.55,2025-08-24 15:02:36,delivered,South,Bank Transfer
+1157,34,489.24,2025-08-24 15:02:37,shipped,West,PayPal
+1158,86,152.62,2025-08-24 15:02:38,pending,East,Credit Card
+1159,90,349.38,2025-08-24 15:02:39,shipped,North,PayPal
+1160,30,344.88,2025-08-24 15:02:40,delivered,East,Credit Card
+1161,54,399.56,2025-08-24 15:02:41,pending,South,PayPal
+1162,27,29.03,2025-08-24 15:02:42,pending,South,Credit Card
+1163,59,150.4,2025-08-24 15:02:43,delivered,South,PayPal
+1164,66,75.4,2025-08-24 15:02:44,pending,East,Credit Card
+1165,52,200.47,2025-08-24 15:02:45,pending,West,Bank Transfer
+1166,66,94.56,2025-08-24 15:02:46,pending,North,Bank Transfer
+1167,45,392.53,2025-08-24 15:02:47,delivered,East,Bank Transfer
+1168,81,126.12,2025-08-24 15:02:48,shipped,East,Credit Card
+1169,32,40.07,2025-08-24 15:02:49,pending,South,Credit Card
+1170,67,492.45,2025-08-24 15:02:50,delivered,West,PayPal
+1171,79,254.05,2025-08-24 15:02:51,pending,South,Bank Transfer
+1172,54,94.67,2025-08-24 15:02:52,pending,West,Bank Transfer
+1173,15,261.45,2025-08-24 15:02:53,delivered,East,Credit Card
+1174,46,251.25,2025-08-24 15:02:54,shipped,West,Bank Transfer
+1175,24,176.24,2025-08-24 15:02:55,shipped,East,Bank Transfer
+1176,66,83.94,2025-08-24 15:02:56,shipped,South,Bank Transfer
+1177,11,330.31,2025-08-24 15:02:57,pending,East,Credit Card
+1178,36,53.18,2025-08-24 15:02:58,delivered,East,PayPal
+1179,63,340.49,2025-08-24 15:02:59,delivered,South,PayPal
+1180,67,262.26,2025-08-24 15:03:00,pending,East,PayPal
+1181,86,83.36,2025-08-24 15:03:01,delivered,West,Bank Transfer
+1182,79,480.84,2025-08-24 15:03:02,delivered,North,Credit Card
+1183,81,419.28,2025-08-24 15:03:03,delivered,East,Bank Transfer
+1184,82,409.81,2025-08-24 15:03:04,shipped,North,Credit Card
+1185,36,182.95,2025-08-24 15:03:05,pending,North,Bank Transfer
+1186,86,451.63,2025-08-24 15:03:06,delivered,South,PayPal
+1187,14,251.58,2025-08-24 15:03:07,delivered,North,Credit Card
+1188,93,131.64,2025-08-24 15:03:08,shipped,West,PayPal
+1189,100,364.61,2025-08-24 15:03:09,pending,South,Credit Card
+1190,7,298.66,2025-08-24 15:03:10,shipped,West,Bank Transfer
+1191,77,189.28,2025-08-24 15:03:11,shipped,South,Bank Transfer
+1192,52,135.12,2025-08-24 15:03:12,shipped,North,PayPal
+1193,26,371.75,2025-08-24 15:03:13,shipped,West,Bank Transfer
+1194,92,308.59,2025-08-24 15:03:14,pending,South,PayPal
+1195,84,151.0,2025-08-24 15:03:15,pending,South,PayPal
+1196,54,180.72,2025-08-24 15:03:16,delivered,East,PayPal
+1197,96,397.22,2025-08-24 15:03:17,delivered,South,Credit Card
+1198,8,216.06,2025-08-24 15:03:18,pending,West,PayPal
+1199,70,122.62,2025-08-24 15:03:19,shipped,West,PayPal
+1200,91,411.44,2025-08-24 15:03:20,delivered,South,PayPal
+1201,56,362.19,2025-08-24 15:03:21,pending,East,Bank Transfer
+1202,76,323.71,2025-08-24 15:03:22,delivered,North,Credit Card
+1203,46,372.3,2025-08-24 15:03:23,shipped,North,Bank Transfer
+1204,66,154.81,2025-08-24 15:03:24,shipped,North,Bank Transfer
+1205,23,396.56,2025-08-24 15:03:25,delivered,West,Bank Transfer
+1206,66,302.64,2025-08-24 15:03:26,delivered,East,Bank Transfer
+1207,83,309.13,2025-08-24 15:03:27,shipped,North,Credit Card
+1208,72,144.45,2025-08-24 15:03:28,shipped,North,Bank Transfer
+1209,53,236.59,2025-08-24 15:03:29,shipped,West,Credit Card
+1210,37,132.14,2025-08-24 15:03:30,shipped,North,PayPal
+1211,18,11.22,2025-08-24 15:03:31,delivered,South,PayPal
+1212,89,461.02,2025-08-24 15:03:32,shipped,North,PayPal
+1213,1,91.27,2025-08-24 15:03:33,pending,West,PayPal
+1214,80,325.5,2025-08-24 15:03:34,shipped,North,Bank Transfer
+1215,24,481.47,2025-08-24 15:03:35,delivered,South,PayPal
+1216,47,55.49,2025-08-24 15:03:36,pending,South,PayPal
+1217,86,57.63,2025-08-24 15:03:37,shipped,West,Bank Transfer
+1218,30,269.16,2025-08-24 15:03:38,pending,South,PayPal
+1219,60,313.52,2025-08-24 15:03:39,pending,East,Credit Card
+1220,79,28.14,2025-08-24 15:03:40,delivered,West,Bank Transfer
+1221,42,398.63,2025-08-24 15:03:41,pending,West,PayPal
+1222,2,302.18,2025-08-24 15:03:42,pending,East,PayPal
+1223,6,335.13,2025-08-24 15:03:43,delivered,West,Credit Card
+1224,98,67.78,2025-08-24 15:03:44,pending,North,Bank Transfer
+1225,78,53.69,2025-08-24 15:03:45,delivered,North,Credit Card
+1226,36,363.98,2025-08-24 15:03:46,delivered,North,PayPal
+1227,11,186.85,2025-08-24 15:03:47,pending,South,Credit Card
+1228,91,54.75,2025-08-24 15:03:48,shipped,South,PayPal
+1229,36,250.12,2025-08-24 15:03:49,pending,North,Credit Card
+1230,24,11.36,2025-08-24 15:03:50,shipped,East,Credit Card
+1231,52,309.6,2025-08-24 15:03:51,delivered,South,Credit Card
+1232,77,268.82,2025-08-24 15:03:52,pending,West,Credit Card
+1233,87,134.08,2025-08-24 15:03:53,pending,West,Bank Transfer
+1234,89,115.64,2025-08-24 15:03:54,shipped,East,PayPal
+1235,11,287.82,2025-08-24 15:03:55,shipped,West,Bank Transfer
+1236,29,58.1,2025-08-24 15:03:56,shipped,West,PayPal
+1237,25,190.0,2025-08-24 15:03:57,delivered,South,Credit Card
+1238,47,104.67,2025-08-24 15:03:58,pending,South,PayPal
+1239,58,282.69,2025-08-24 15:03:59,shipped,North,Bank Transfer
+1240,17,100.85,2025-08-24 15:04:00,pending,North,Credit Card
+1241,99,417.38,2025-08-24 15:04:01,shipped,North,PayPal
+1242,100,268.04,2025-08-24 15:04:02,shipped,East,Credit Card
+1243,71,177.26,2025-08-24 15:04:03,shipped,East,Credit Card
+1244,4,149.97,2025-08-24 15:04:04,shipped,East,Bank Transfer
+1245,31,90.72,2025-08-24 15:04:05,shipped,South,PayPal
+1246,89,90.79,2025-08-24 15:04:06,pending,East,Credit Card
+1247,39,168.96,2025-08-24 15:04:07,pending,North,Credit Card
+1248,17,165.97,2025-08-24 15:04:08,shipped,East,PayPal
+1249,71,328.39,2025-08-24 15:04:09,delivered,South,Credit Card
+1250,42,260.33,2025-08-24 15:04:10,pending,East,Credit Card
+1251,42,122.89,2025-08-24 15:04:11,shipped,East,Credit Card
+1252,61,261.16,2025-08-24 15:04:12,shipped,East,Bank Transfer
+1253,33,305.79,2025-08-24 15:04:13,delivered,North,Bank Transfer
+1254,92,112.95,2025-08-24 15:04:14,shipped,South,Credit Card
+1255,35,150.12,2025-08-24 15:04:15,pending,West,PayPal
+1256,58,117.93,2025-08-24 15:04:16,shipped,North,Bank Transfer
+1257,38,121.56,2025-08-24 15:04:17,delivered,South,Bank Transfer
+1258,88,426.64,2025-08-24 15:04:18,pending,West,PayPal
+1259,97,136.58,2025-08-24 15:04:19,shipped,East,PayPal
+1260,45,482.45,2025-08-24 15:04:20,shipped,West,Bank Transfer
+1261,50,293.95,2025-08-24 15:04:21,delivered,North,Bank Transfer
+1262,49,380.35,2025-08-24 15:04:22,shipped,West,Bank Transfer
+1263,66,54.7,2025-08-24 15:04:23,delivered,East,Credit Card
+1264,68,271.04,2025-08-24 15:04:24,delivered,West,Bank Transfer
+1265,64,456.69,2025-08-24 15:04:25,shipped,North,Credit Card
+1266,72,49.58,2025-08-24 15:04:26,pending,North,PayPal
+1267,2,285.07,2025-08-24 15:04:27,delivered,East,Bank Transfer
+1268,68,464.69,2025-08-24 15:04:28,shipped,North,Credit Card
+1269,38,128.52,2025-08-24 15:04:29,shipped,North,PayPal
+1270,10,203.84,2025-08-24 15:04:30,delivered,South,PayPal
+1271,90,247.63,2025-08-24 15:04:31,shipped,South,Credit Card
+1272,79,28.42,2025-08-24 15:04:32,delivered,North,Bank Transfer
+1273,20,294.84,2025-08-24 15:04:33,delivered,East,PayPal
+1274,46,101.83,2025-08-24 15:04:34,delivered,West,Bank Transfer
+1275,8,381.1,2025-08-24 15:04:35,pending,West,PayPal
+1276,48,246.53,2025-08-24 15:04:36,pending,East,Credit Card
+1277,98,339.47,2025-08-24 15:04:37,pending,North,Credit Card
+1278,50,152.72,2025-08-24 15:04:38,pending,East,PayPal
+1279,78,310.52,2025-08-24 15:04:39,delivered,North,PayPal
+1280,14,443.81,2025-08-24 15:04:40,pending,North,Credit Card
+1281,54,387.75,2025-08-24 15:04:41,pending,North,Credit Card
+1282,5,126.62,2025-08-24 15:04:42,pending,West,Credit Card
+1283,60,459.61,2025-08-24 15:04:43,delivered,West,PayPal
+1284,82,104.05,2025-08-24 15:04:44,pending,South,Credit Card
+1285,73,423.85,2025-08-24 15:04:45,shipped,North,PayPal
+1286,91,443.48,2025-08-24 15:04:46,delivered,North,PayPal
+1287,95,412.86,2025-08-24 15:04:47,delivered,East,Credit Card
+1288,30,26.08,2025-08-24 15:04:48,delivered,West,Credit Card
+1289,93,217.39,2025-08-24 15:04:49,delivered,West,Bank Transfer
+1290,53,345.69,2025-08-24 15:04:50,pending,North,Bank Transfer
+1291,40,171.77,2025-08-24 15:04:51,shipped,East,Credit Card
+1292,54,399.32,2025-08-24 15:04:52,shipped,West,Credit Card
+1293,64,162.31,2025-08-24 15:04:53,pending,West,PayPal
+1294,59,226.12,2025-08-24 15:04:54,delivered,South,PayPal
+1295,58,101.97,2025-08-24 15:04:55,pending,South,Bank Transfer
+1296,50,310.9,2025-08-24 15:04:56,delivered,South,PayPal
+1297,14,152.05,2025-08-24 15:04:57,pending,East,Credit Card
+1298,42,280.9,2025-08-24 15:04:58,delivered,North,PayPal
+1299,58,161.68,2025-08-24 15:04:59,pending,South,Credit Card
+1300,92,447.63,2025-08-24 15:05:00,pending,North,PayPal
+1301,8,294.5,2025-08-24 15:05:01,pending,North,Credit Card
+1302,47,492.66,2025-08-24 15:05:02,shipped,West,PayPal
+1303,26,477.24,2025-08-24 15:05:03,delivered,South,Bank Transfer
+1304,89,14.58,2025-08-24 15:05:04,delivered,North,PayPal
+1305,49,29.59,2025-08-24 15:05:05,delivered,North,PayPal
+1306,79,83.41,2025-08-24 15:05:06,shipped,North,Bank Transfer
+1307,100,278.9,2025-08-24 15:05:07,delivered,South,Bank Transfer
+1308,58,47.06,2025-08-24 15:05:08,pending,North,Credit Card
+1309,84,354.25,2025-08-24 15:05:09,delivered,East,PayPal
+1310,84,478.09,2025-08-24 15:05:10,pending,East,PayPal
+1311,83,186.97,2025-08-24 15:05:11,shipped,South,PayPal
+1312,29,197.43,2025-08-24 15:05:12,pending,West,PayPal
+1313,45,139.37,2025-08-24 15:05:13,delivered,East,PayPal
+1314,64,421.16,2025-08-24 15:05:14,shipped,North,Bank Transfer
+1315,54,34.07,2025-08-24 15:05:15,pending,South,Bank Transfer
+1316,51,179.63,2025-08-24 15:05:16,shipped,West,Bank Transfer
+1317,66,335.9,2025-08-24 15:05:17,shipped,South,Bank Transfer
+1318,30,103.08,2025-08-24 15:05:18,pending,North,Credit Card
+1319,71,289.14,2025-08-24 15:05:19,pending,North,PayPal
+1320,27,105.9,2025-08-24 15:05:20,pending,East,Credit Card
+1321,85,486.65,2025-08-24 15:05:21,pending,North,Credit Card
+1322,27,200.25,2025-08-24 15:05:22,pending,North,Bank Transfer
+1323,18,273.36,2025-08-24 15:05:23,delivered,North,Credit Card
+1324,73,330.58,2025-08-24 15:05:24,pending,East,Credit Card
+1325,33,421.66,2025-08-24 15:05:25,shipped,East,PayPal
+1326,75,144.85,2025-08-24 15:05:26,delivered,East,PayPal
+1327,87,448.99,2025-08-24 15:05:27,delivered,South,Bank Transfer
+1328,1,236.8,2025-08-24 15:05:28,pending,North,Credit Card
+1329,94,101.92,2025-08-24 15:05:29,shipped,East,Bank Transfer
+1330,82,176.27,2025-08-24 15:05:30,pending,West,Credit Card
+1331,91,64.12,2025-08-24 15:05:31,pending,South,Bank Transfer
+1332,66,50.19,2025-08-24 15:05:32,shipped,West,PayPal
+1333,49,436.48,2025-08-24 15:05:33,delivered,East,PayPal
+1334,33,120.28,2025-08-24 15:05:34,pending,East,PayPal
+1335,38,447.4,2025-08-24 15:05:35,shipped,East,Bank Transfer
+1336,82,270.18,2025-08-24 15:05:36,pending,West,Credit Card
+1337,30,471.08,2025-08-24 15:05:37,shipped,North,PayPal
+1338,87,77.8,2025-08-24 15:05:38,delivered,East,Bank Transfer
+1339,88,401.52,2025-08-24 15:05:39,shipped,West,PayPal
+1340,4,126.43,2025-08-24 15:05:40,pending,West,PayPal
+1341,90,157.01,2025-08-24 15:05:41,pending,East,Bank Transfer
+1342,10,194.9,2025-08-24 15:05:42,delivered,West,Credit Card
+1343,87,499.04,2025-08-24 15:05:43,delivered,South,PayPal
+1344,86,484.53,2025-08-24 15:05:44,pending,West,Bank Transfer
+1345,82,489.24,2025-08-24 15:05:45,pending,North,Bank Transfer
+1346,44,481.73,2025-08-24 15:05:46,delivered,South,PayPal
+1347,5,294.9,2025-08-24 15:05:47,shipped,East,Bank Transfer
+1348,4,280.34,2025-08-24 15:05:48,shipped,South,PayPal
+1349,28,265.28,2025-08-24 15:05:49,shipped,East,PayPal
+1350,8,12.21,2025-08-24 15:05:50,delivered,East,PayPal
+1351,71,117.75,2025-08-24 15:05:51,shipped,East,Credit Card
+1352,25,397.03,2025-08-24 15:05:52,pending,South,Bank Transfer
+1353,15,124.95,2025-08-24 15:05:53,delivered,South,Bank Transfer
+1354,83,396.86,2025-08-24 15:05:54,pending,East,Bank Transfer
+1355,4,316.2,2025-08-24 15:05:55,pending,North,Bank Transfer
+1356,7,158.25,2025-08-24 15:05:56,shipped,South,PayPal
+1357,65,307.47,2025-08-24 15:05:57,shipped,South,Credit Card
+1358,13,468.49,2025-08-24 15:05:58,pending,South,PayPal
+1359,13,220.76,2025-08-24 15:05:59,shipped,East,Bank Transfer
+1360,93,130.24,2025-08-24 15:06:00,delivered,East,PayPal
+1361,100,394.61,2025-08-24 15:06:01,delivered,North,Bank Transfer
+1362,20,493.41,2025-08-24 15:06:02,pending,North,Bank Transfer
+1363,6,227.62,2025-08-24 15:06:03,delivered,East,PayPal
+1364,35,255.95,2025-08-24 15:06:04,shipped,North,Credit Card
+1365,75,381.23,2025-08-24 15:06:05,pending,South,Bank Transfer
+1366,30,337.52,2025-08-24 15:06:06,delivered,North,PayPal
+1367,94,391.14,2025-08-24 15:06:07,pending,West,Credit Card
+1368,12,247.56,2025-08-24 15:06:08,pending,South,Credit Card
+1369,59,153.49,2025-08-24 15:06:09,shipped,South,Credit Card
+1370,13,474.6,2025-08-24 15:06:10,delivered,North,Credit Card
+1371,64,242.78,2025-08-24 15:06:11,pending,West,Bank Transfer
+1372,37,354.76,2025-08-24 15:06:12,shipped,South,Credit Card
+1373,65,387.42,2025-08-24 15:06:13,delivered,North,Bank Transfer
+1374,27,471.01,2025-08-24 15:06:14,pending,South,Bank Transfer
+1375,88,151.06,2025-08-24 15:06:15,shipped,North,PayPal
+1376,5,321.15,2025-08-24 15:06:16,shipped,West,Credit Card
+1377,85,338.33,2025-08-24 15:06:17,pending,North,Credit Card
+1378,31,230.65,2025-08-24 15:06:18,pending,North,Credit Card
+1379,96,319.05,2025-08-24 15:06:19,shipped,West,Bank Transfer
+1380,43,201.8,2025-08-24 15:06:20,pending,East,Bank Transfer
+1381,31,228.88,2025-08-24 15:06:21,delivered,East,Credit Card
+1382,62,74.71,2025-08-24 15:06:22,delivered,North,Bank Transfer
+1383,8,130.83,2025-08-24 15:06:23,shipped,South,PayPal
+1384,38,52.47,2025-08-24 15:06:24,shipped,West,Bank Transfer
+1385,38,313.12,2025-08-24 15:06:25,delivered,South,Bank Transfer
+1386,26,197.49,2025-08-24 15:06:26,delivered,South,Bank Transfer
+1387,40,384.94,2025-08-24 15:06:27,shipped,West,Credit Card
+1388,37,460.25,2025-08-24 15:06:28,delivered,North,Credit Card
+1389,88,418.4,2025-08-24 15:06:29,pending,West,Bank Transfer
+1390,19,223.04,2025-08-24 15:06:30,shipped,West,PayPal
+1391,90,93.7,2025-08-24 15:06:31,delivered,West,PayPal
+1392,73,427.16,2025-08-24 15:06:32,delivered,South,Bank Transfer
+1393,98,146.52,2025-08-24 15:06:33,shipped,North,PayPal
+1394,73,458.49,2025-08-24 15:06:34,delivered,South,Bank Transfer
+1395,74,257.46,2025-08-24 15:06:35,delivered,East,Credit Card
+1396,94,108.96,2025-08-24 15:06:36,pending,North,Credit Card
+1397,29,122.52,2025-08-24 15:06:37,delivered,North,PayPal
+1398,27,152.38,2025-08-24 15:06:38,shipped,West,PayPal
+1399,20,459.16,2025-08-24 15:06:39,shipped,South,PayPal
+1400,7,148.67,2025-08-24 15:06:40,delivered,South,PayPal
+1401,62,38.39,2025-08-24 15:06:41,delivered,East,Credit Card
+1402,94,274.83,2025-08-24 15:06:42,pending,West,Bank Transfer
+1403,60,218.17,2025-08-24 15:06:43,shipped,South,PayPal
+1404,32,237.08,2025-08-24 15:06:44,pending,South,Bank Transfer
+1405,50,345.56,2025-08-24 15:06:45,pending,West,Bank Transfer
+1406,71,213.58,2025-08-24 15:06:46,pending,West,PayPal
+1407,4,248.64,2025-08-24 15:06:47,pending,East,Bank Transfer
+1408,91,74.48,2025-08-24 15:06:48,shipped,East,Credit Card
+1409,62,445.11,2025-08-24 15:06:49,shipped,South,PayPal
+1410,8,121.91,2025-08-24 15:06:50,delivered,West,PayPal
+1411,35,67.84,2025-08-24 15:06:51,shipped,West,PayPal
+1412,5,316.27,2025-08-24 15:06:52,delivered,West,PayPal
+1413,87,41.24,2025-08-24 15:06:53,shipped,South,Credit Card
+1414,1,335.26,2025-08-24 15:06:54,pending,North,Bank Transfer
+1415,64,108.01,2025-08-24 15:06:55,pending,West,PayPal
+1416,3,174.1,2025-08-24 15:06:56,pending,West,PayPal
+1417,75,317.5,2025-08-24 15:06:57,shipped,West,Bank Transfer
+1418,82,233.02,2025-08-24 15:06:58,shipped,North,Credit Card
+1419,55,211.54,2025-08-24 15:06:59,pending,North,Bank Transfer
+1420,56,499.56,2025-08-24 15:07:00,shipped,South,Credit Card
+1421,95,55.42,2025-08-24 15:07:01,pending,North,Bank Transfer
+1422,6,342.31,2025-08-24 15:07:02,shipped,East,Bank Transfer
+1423,34,207.3,2025-08-24 15:07:03,delivered,South,Bank Transfer
+1424,38,398.48,2025-08-24 15:07:04,shipped,South,Bank Transfer
+1425,100,162.69,2025-08-24 15:07:05,pending,East,Credit Card
+1426,94,348.68,2025-08-24 15:07:06,shipped,West,Bank Transfer
+1427,30,449.86,2025-08-24 15:07:07,delivered,South,PayPal
+1428,59,49.56,2025-08-24 15:07:08,shipped,West,PayPal
+1429,90,172.79,2025-08-24 15:07:09,pending,South,Credit Card
+1430,17,68.04,2025-08-24 15:07:10,pending,East,Bank Transfer
+1431,28,352.04,2025-08-24 15:07:11,pending,South,Credit Card
+1432,21,205.88,2025-08-24 15:07:12,pending,South,PayPal
+1433,89,356.57,2025-08-24 15:07:13,delivered,North,PayPal
+1434,78,68.54,2025-08-24 15:07:14,delivered,North,Credit Card
+1435,41,160.19,2025-08-24 15:07:15,delivered,South,Credit Card
+1436,67,486.58,2025-08-24 15:07:16,delivered,East,PayPal
+1437,64,34.07,2025-08-24 15:07:17,delivered,North,Credit Card
+1438,23,431.72,2025-08-24 15:07:18,pending,West,Credit Card
+1439,61,393.67,2025-08-24 15:07:19,shipped,East,PayPal
+1440,77,357.74,2025-08-24 15:07:20,pending,East,Bank Transfer
+1441,52,300.36,2025-08-24 15:07:21,shipped,West,PayPal
+1442,9,384.48,2025-08-24 15:07:22,delivered,South,Credit Card
+1443,81,386.6,2025-08-24 15:07:23,pending,South,Credit Card
+1444,97,434.16,2025-08-24 15:07:24,delivered,West,Bank Transfer
+1445,40,258.56,2025-08-24 15:07:25,shipped,East,PayPal
+1446,78,474.53,2025-08-24 15:07:26,delivered,North,PayPal
+1447,68,217.61,2025-08-24 15:07:27,delivered,North,PayPal
+1448,48,386.49,2025-08-24 15:07:28,pending,North,Bank Transfer
+1449,18,206.96,2025-08-24 15:07:29,delivered,East,Credit Card
+1450,12,381.82,2025-08-24 15:07:30,shipped,North,Credit Card
+1451,44,445.56,2025-08-24 15:07:31,delivered,South,Credit Card
+1452,36,81.49,2025-08-24 15:07:32,shipped,West,PayPal
+1453,42,362.95,2025-08-24 15:07:33,shipped,West,Credit Card
+1454,1,433.16,2025-08-24 15:07:34,delivered,North,PayPal
+1455,45,496.16,2025-08-24 15:07:35,pending,West,Credit Card
+1456,62,331.32,2025-08-24 15:07:36,delivered,South,Bank Transfer
+1457,89,196.29,2025-08-24 15:07:37,shipped,West,Bank Transfer
+1458,73,349.11,2025-08-24 15:07:38,pending,West,Bank Transfer
+1459,39,346.57,2025-08-24 15:07:39,shipped,East,Bank Transfer
+1460,12,98.15,2025-08-24 15:07:40,delivered,North,Credit Card
+1461,36,333.81,2025-08-24 15:07:41,delivered,South,PayPal
+1462,99,72.03,2025-08-24 15:07:42,pending,South,Bank Transfer
+1463,55,49.01,2025-08-24 15:07:43,delivered,South,PayPal
+1464,88,178.56,2025-08-24 15:07:44,pending,North,Credit Card
+1465,30,137.74,2025-08-24 15:07:45,shipped,West,Credit Card
+1466,62,20.13,2025-08-24 15:07:46,shipped,North,Bank Transfer
+1467,94,223.66,2025-08-24 15:07:47,shipped,North,Credit Card
+1468,12,203.37,2025-08-24 15:07:48,pending,North,PayPal
+1469,86,365.71,2025-08-24 15:07:49,delivered,East,Bank Transfer
+1470,29,365.94,2025-08-24 15:07:50,shipped,North,PayPal
+1471,30,168.74,2025-08-24 15:07:51,pending,West,Bank Transfer
+1472,48,439.32,2025-08-24 15:07:52,delivered,North,Credit Card
+1473,19,471.79,2025-08-24 15:07:53,shipped,East,Credit Card
+1474,1,358.39,2025-08-24 15:07:54,pending,North,Bank Transfer
+1475,25,140.54,2025-08-24 15:07:55,pending,North,Credit Card
+1476,44,455.14,2025-08-24 15:07:56,pending,South,Bank Transfer
+1477,49,275.87,2025-08-24 15:07:57,shipped,West,Credit Card
+1478,47,494.81,2025-08-24 15:07:58,delivered,South,Credit Card
+1479,29,421.74,2025-08-24 15:07:59,delivered,West,Credit Card
+1480,36,60.78,2025-08-24 15:08:00,delivered,North,Credit Card
+1481,23,33.39,2025-08-24 15:08:01,pending,West,Bank Transfer
+1482,92,229.0,2025-08-24 15:08:02,pending,North,Bank Transfer
+1483,32,349.82,2025-08-24 15:08:03,delivered,North,Credit Card
+1484,43,343.76,2025-08-24 15:08:04,shipped,East,Credit Card
+1485,45,323.44,2025-08-24 15:08:05,delivered,East,PayPal
+1486,68,373.02,2025-08-24 15:08:06,shipped,West,Credit Card
+1487,36,473.7,2025-08-24 15:08:07,pending,South,Credit Card
+1488,1,406.45,2025-08-24 15:08:08,shipped,East,Bank Transfer
+1489,11,42.38,2025-08-24 15:08:09,pending,East,Bank Transfer
+1490,97,194.48,2025-08-24 15:08:10,pending,North,Credit Card
+1491,57,214.62,2025-08-24 15:08:11,delivered,North,Bank Transfer
+1492,74,383.74,2025-08-24 15:08:12,pending,North,Bank Transfer
+1493,93,170.31,2025-08-24 15:08:13,shipped,North,Bank Transfer
+1494,66,103.0,2025-08-24 15:08:14,pending,North,PayPal
+1495,76,181.74,2025-08-24 15:08:15,pending,South,PayPal
+1496,41,182.28,2025-08-24 15:08:16,delivered,East,Bank Transfer
+1497,98,142.17,2025-08-24 15:08:17,delivered,East,Bank Transfer
+1498,97,339.46,2025-08-24 15:08:18,pending,East,Credit Card
+1499,61,172.93,2025-08-24 15:08:19,shipped,North,Credit Card
+1500,94,140.7,2025-08-24 15:08:20,shipped,North,Bank Transfer
+1501,34,268.41,2025-08-24 15:08:21,delivered,East,Credit Card
+1502,89,476.24,2025-08-24 15:08:22,pending,North,PayPal
+1503,56,255.43,2025-08-24 15:08:23,pending,North,PayPal
+1504,62,329.7,2025-08-24 15:08:24,pending,North,Credit Card
+1505,45,426.18,2025-08-24 15:08:25,shipped,South,Credit Card
+1506,81,390.48,2025-08-24 15:08:26,delivered,South,Credit Card
+1507,13,296.65,2025-08-24 15:08:27,shipped,East,Credit Card
+1508,23,475.35,2025-08-24 15:08:28,delivered,North,PayPal
+1509,83,415.62,2025-08-24 15:08:29,shipped,South,Bank Transfer
+1510,18,152.72,2025-08-24 15:08:30,shipped,North,Bank Transfer
+1511,36,374.17,2025-08-24 15:08:31,delivered,East,PayPal
+1512,7,184.1,2025-08-24 15:08:32,delivered,North,Credit Card
+1513,6,300.35,2025-08-24 15:08:33,pending,West,PayPal
+1514,99,244.04,2025-08-24 15:08:34,delivered,East,PayPal
+1515,72,228.2,2025-08-24 15:08:35,delivered,North,PayPal
+1516,52,296.6,2025-08-24 15:08:36,shipped,East,Bank Transfer
+1517,88,12.81,2025-08-24 15:08:37,pending,East,PayPal
+1518,62,430.75,2025-08-24 15:08:38,delivered,West,Credit Card
+1519,98,217.24,2025-08-24 15:08:39,shipped,West,PayPal
+1520,25,365.85,2025-08-24 15:08:40,delivered,West,Credit Card
+1521,90,151.49,2025-08-24 15:08:41,pending,East,PayPal
+1522,23,187.29,2025-08-24 15:08:42,shipped,West,PayPal
+1523,68,47.03,2025-08-24 15:08:43,delivered,East,Credit Card
+1524,94,297.29,2025-08-24 15:08:44,pending,South,PayPal
+1525,83,223.39,2025-08-24 15:08:45,pending,East,Credit Card
+1526,1,239.07,2025-08-24 15:08:46,shipped,North,PayPal
+1527,50,461.69,2025-08-24 15:08:47,delivered,West,Credit Card
+1528,100,428.96,2025-08-24 15:08:48,pending,East,PayPal
+1529,74,106.6,2025-08-24 15:08:49,pending,South,Bank Transfer
+1530,68,238.05,2025-08-24 15:08:50,pending,North,PayPal
+1531,79,73.31,2025-08-24 15:08:51,shipped,South,Credit Card
+1532,77,154.81,2025-08-24 15:08:52,shipped,East,Credit Card
+1533,22,490.46,2025-08-24 15:08:53,shipped,South,PayPal
+1534,4,382.73,2025-08-24 15:08:54,shipped,North,Credit Card
+1535,92,321.22,2025-08-24 15:08:55,delivered,South,Bank Transfer
+1536,81,371.42,2025-08-24 15:08:56,delivered,West,Credit Card
+1537,11,489.52,2025-08-24 15:08:57,shipped,West,Bank Transfer
+1538,69,167.05,2025-08-24 15:08:58,shipped,North,PayPal
+1539,91,71.08,2025-08-24 15:08:59,pending,North,PayPal
+1540,33,223.9,2025-08-24 15:09:00,shipped,South,Bank Transfer
+1541,95,243.04,2025-08-24 15:09:01,shipped,South,PayPal
+1542,26,85.63,2025-08-24 15:09:02,delivered,South,Bank Transfer
+1543,69,120.99,2025-08-24 15:09:03,delivered,West,PayPal
+1544,23,117.01,2025-08-24 15:09:04,pending,East,PayPal
+1545,21,305.52,2025-08-24 15:09:05,pending,East,Credit Card
+1546,64,425.16,2025-08-24 15:09:06,pending,North,PayPal
+1547,23,167.43,2025-08-24 15:09:07,delivered,East,PayPal
+1548,88,483.59,2025-08-24 15:09:08,delivered,North,PayPal
+1549,83,168.3,2025-08-24 15:09:09,shipped,East,Bank Transfer
+1550,76,237.15,2025-08-24 15:09:10,pending,East,Credit Card
+1551,89,407.22,2025-08-24 15:09:11,shipped,South,PayPal
+1552,73,57.08,2025-08-24 15:09:12,delivered,West,PayPal
+1553,46,132.43,2025-08-24 15:09:13,delivered,South,Credit Card
+1554,75,464.77,2025-08-24 15:09:14,delivered,West,PayPal
+1555,21,320.37,2025-08-24 15:09:15,pending,North,Credit Card
+1556,74,352.15,2025-08-24 15:09:16,pending,West,Bank Transfer
+1557,77,476.83,2025-08-24 15:09:17,pending,West,Credit Card
+1558,49,491.17,2025-08-24 15:09:18,shipped,East,Credit Card
+1559,90,109.34,2025-08-24 15:09:19,pending,South,PayPal
+1560,48,315.43,2025-08-24 15:09:20,delivered,South,Bank Transfer
+1561,45,243.47,2025-08-24 15:09:21,shipped,West,Bank Transfer
+1562,13,68.98,2025-08-24 15:09:22,pending,West,Credit Card
+1563,4,423.99,2025-08-24 15:09:23,pending,North,Credit Card
+1564,24,186.69,2025-08-24 15:09:24,pending,West,Bank Transfer
+1565,65,279.34,2025-08-24 15:09:25,pending,West,PayPal
+1566,48,292.03,2025-08-24 15:09:26,delivered,South,Bank Transfer
+1567,88,398.68,2025-08-24 15:09:27,delivered,East,Credit Card
+1568,64,23.06,2025-08-24 15:09:28,shipped,North,PayPal
+1569,92,261.97,2025-08-24 15:09:29,delivered,West,Credit Card
+1570,85,333.58,2025-08-24 15:09:30,delivered,East,Bank Transfer
+1571,40,238.31,2025-08-24 15:09:31,delivered,North,PayPal
+1572,11,320.92,2025-08-24 15:09:32,pending,East,PayPal
+1573,20,160.31,2025-08-24 15:09:33,shipped,North,PayPal
+1574,75,199.47,2025-08-24 15:09:34,shipped,West,Bank Transfer
+1575,55,152.7,2025-08-24 15:09:35,pending,South,Credit Card
+1576,88,474.39,2025-08-24 15:09:36,delivered,West,Bank Transfer
+1577,23,302.81,2025-08-24 15:09:37,delivered,East,Credit Card
+1578,6,360.02,2025-08-24 15:09:38,pending,North,Bank Transfer
+1579,83,105.84,2025-08-24 15:09:39,delivered,East,PayPal
+1580,40,208.73,2025-08-24 15:09:40,shipped,West,Credit Card
+1581,64,10.01,2025-08-24 15:09:41,shipped,North,Credit Card
+1582,19,198.62,2025-08-24 15:09:42,shipped,East,Credit Card
+1583,73,478.24,2025-08-24 15:09:43,shipped,South,Bank Transfer
+1584,45,494.41,2025-08-24 15:09:44,shipped,North,PayPal
+1585,7,10.49,2025-08-24 15:09:45,delivered,West,PayPal
+1586,41,358.77,2025-08-24 15:09:46,pending,North,PayPal
+1587,39,67.44,2025-08-24 15:09:47,pending,South,Bank Transfer
+1588,87,247.89,2025-08-24 15:09:48,shipped,East,Credit Card
+1589,47,95.86,2025-08-24 15:09:49,delivered,East,PayPal
+1590,96,301.67,2025-08-24 15:09:50,delivered,North,Credit Card
+1591,6,335.24,2025-08-24 15:09:51,shipped,South,PayPal
+1592,35,478.0,2025-08-24 15:09:52,delivered,West,PayPal
+1593,41,156.85,2025-08-24 15:09:53,shipped,West,Credit Card
+1594,43,449.84,2025-08-24 15:09:54,delivered,North,Bank Transfer
+1595,41,350.94,2025-08-24 15:09:55,shipped,North,Credit Card
+1596,15,472.69,2025-08-24 15:09:56,shipped,North,Credit Card
+1597,83,307.54,2025-08-24 15:09:57,shipped,East,PayPal
+1598,50,171.82,2025-08-24 15:09:58,delivered,South,Credit Card
+1599,31,137.96,2025-08-24 15:09:59,delivered,South,Credit Card
+1600,11,118.71,2025-08-24 15:10:00,delivered,West,Credit Card
+1601,96,404.81,2025-08-24 15:10:01,shipped,East,PayPal
+1602,67,32.79,2025-08-24 15:10:02,delivered,North,Bank Transfer
+1603,10,119.85,2025-08-24 15:10:03,shipped,West,PayPal
+1604,21,86.11,2025-08-24 15:10:04,shipped,West,Bank Transfer
+1605,72,425.61,2025-08-24 15:10:05,pending,South,PayPal
+1606,23,159.93,2025-08-24 15:10:06,delivered,West,Bank Transfer
+1607,34,281.92,2025-08-24 15:10:07,pending,South,PayPal
+1608,64,122.65,2025-08-24 15:10:08,pending,South,Credit Card
+1609,53,475.65,2025-08-24 15:10:09,shipped,West,Credit Card
+1610,97,241.5,2025-08-24 15:10:10,shipped,North,Bank Transfer
+1611,89,436.71,2025-08-24 15:10:11,delivered,West,PayPal
+1612,90,351.63,2025-08-24 15:10:12,delivered,South,PayPal
+1613,73,172.95,2025-08-24 15:10:13,pending,West,Credit Card
+1614,22,224.53,2025-08-24 15:10:14,pending,East,Bank Transfer
+1615,5,295.39,2025-08-24 15:10:15,pending,South,Credit Card
+1616,28,472.58,2025-08-24 15:10:16,shipped,East,Credit Card
+1617,97,247.52,2025-08-24 15:10:17,shipped,West,PayPal
+1618,89,132.82,2025-08-24 15:10:18,shipped,West,Credit Card
+1619,86,476.67,2025-08-24 15:10:19,delivered,West,PayPal
+1620,3,187.1,2025-08-24 15:10:20,delivered,East,PayPal
+1621,52,97.08,2025-08-24 15:10:21,shipped,South,Bank Transfer
+1622,99,269.25,2025-08-24 15:10:22,shipped,East,Credit Card
+1623,95,79.25,2025-08-24 15:10:23,pending,West,PayPal
+1624,18,94.93,2025-08-24 15:10:24,shipped,North,Bank Transfer
+1625,26,95.36,2025-08-24 15:10:25,pending,East,PayPal
+1626,7,475.49,2025-08-24 15:10:26,delivered,East,Bank Transfer
+1627,23,403.32,2025-08-24 15:10:27,delivered,South,PayPal
+1628,9,331.43,2025-08-24 15:10:28,pending,East,PayPal
+1629,36,392.03,2025-08-24 15:10:29,delivered,West,Credit Card
+1630,20,241.58,2025-08-24 15:10:30,pending,South,PayPal
+1631,8,13.2,2025-08-24 15:10:31,pending,East,Bank Transfer
+1632,62,278.15,2025-08-24 15:10:32,shipped,East,Bank Transfer
+1633,72,150.25,2025-08-24 15:10:33,pending,West,PayPal
+1634,32,257.08,2025-08-24 15:10:34,shipped,East,PayPal
+1635,75,261.05,2025-08-24 15:10:35,pending,North,Bank Transfer
+1636,25,339.13,2025-08-24 15:10:36,delivered,South,PayPal
+1637,56,474.8,2025-08-24 15:10:37,shipped,South,Bank Transfer
+1638,51,415.37,2025-08-24 15:10:38,shipped,South,Credit Card
+1639,28,70.05,2025-08-24 15:10:39,pending,South,PayPal
+1640,24,94.2,2025-08-24 15:10:40,pending,West,Credit Card
+1641,49,57.62,2025-08-24 15:10:41,shipped,East,Bank Transfer
+1642,81,459.05,2025-08-24 15:10:42,shipped,North,Bank Transfer
+1643,68,234.43,2025-08-24 15:10:43,shipped,West,Bank Transfer
+1644,65,99.05,2025-08-24 15:10:44,pending,South,Bank Transfer
+1645,81,392.49,2025-08-24 15:10:45,pending,North,Bank Transfer
+1646,67,467.16,2025-08-24 15:10:46,pending,North,Bank Transfer
+1647,19,343.75,2025-08-24 15:10:47,pending,West,PayPal
+1648,99,409.21,2025-08-24 15:10:48,shipped,West,PayPal
+1649,8,406.61,2025-08-24 15:10:49,delivered,North,Bank Transfer
+1650,100,364.76,2025-08-24 15:10:50,delivered,East,PayPal
+1651,57,217.74,2025-08-24 15:10:51,shipped,North,PayPal
+1652,40,249.6,2025-08-24 15:10:52,delivered,West,Bank Transfer
+1653,45,330.65,2025-08-24 15:10:53,delivered,West,Credit Card
+1654,65,168.55,2025-08-24 15:10:54,shipped,West,Bank Transfer
+1655,67,286.97,2025-08-24 15:10:55,pending,North,Bank Transfer
+1656,98,105.79,2025-08-24 15:10:56,pending,East,Bank Transfer
+1657,43,165.18,2025-08-24 15:10:57,shipped,South,Bank Transfer
+1658,65,23.94,2025-08-24 15:10:58,delivered,East,Credit Card
+1659,84,110.69,2025-08-24 15:10:59,shipped,North,PayPal
+1660,53,495.22,2025-08-24 15:11:00,pending,West,Credit Card
+1661,96,403.35,2025-08-24 15:11:01,shipped,North,Credit Card
+1662,55,127.41,2025-08-24 15:11:02,delivered,North,Bank Transfer
+1663,100,367.91,2025-08-24 15:11:03,delivered,West,Credit Card
+1664,35,494.0,2025-08-24 15:11:04,pending,East,Credit Card
+1665,22,84.65,2025-08-24 15:11:05,shipped,South,Bank Transfer
+1666,1,444.69,2025-08-24 15:11:06,delivered,North,PayPal
+1667,58,399.84,2025-08-24 15:11:07,pending,North,Credit Card
+1668,96,376.59,2025-08-24 15:11:08,pending,South,Bank Transfer
+1669,93,137.64,2025-08-24 15:11:09,shipped,South,PayPal
+1670,74,317.01,2025-08-24 15:11:10,pending,West,Bank Transfer
+1671,44,481.98,2025-08-24 15:11:11,pending,North,Credit Card
+1672,99,31.01,2025-08-24 15:11:12,delivered,West,Bank Transfer
+1673,89,446.58,2025-08-24 15:11:13,pending,West,PayPal
+1674,39,347.43,2025-08-24 15:11:14,pending,South,Credit Card
+1675,61,476.15,2025-08-24 15:11:15,pending,East,Credit Card
+1676,76,410.89,2025-08-24 15:11:16,pending,South,Bank Transfer
+1677,14,141.25,2025-08-24 15:11:17,delivered,West,Credit Card
+1678,77,34.04,2025-08-24 15:11:18,pending,East,Credit Card
+1679,61,346.42,2025-08-24 15:11:19,delivered,West,Bank Transfer
+1680,3,383.01,2025-08-24 15:11:20,pending,North,PayPal
+1681,27,197.54,2025-08-24 15:11:21,shipped,West,Bank Transfer
+1682,45,389.65,2025-08-24 15:11:22,pending,West,PayPal
+1683,19,51.49,2025-08-24 15:11:23,shipped,South,Credit Card
+1684,14,437.47,2025-08-24 15:11:24,shipped,West,Bank Transfer
+1685,91,63.83,2025-08-24 15:11:25,delivered,West,PayPal
+1686,83,481.17,2025-08-24 15:11:26,pending,South,Credit Card
+1687,69,218.55,2025-08-24 15:11:27,pending,North,Bank Transfer
+1688,79,112.14,2025-08-24 15:11:28,delivered,South,Bank Transfer
+1689,19,238.41,2025-08-24 15:11:29,delivered,East,Credit Card
+1690,50,386.9,2025-08-24 15:11:30,shipped,East,PayPal
+1691,7,446.08,2025-08-24 15:11:31,shipped,West,PayPal
+1692,80,450.39,2025-08-24 15:11:32,shipped,North,Credit Card
+1693,91,11.4,2025-08-24 15:11:33,shipped,East,PayPal
+1694,91,197.13,2025-08-24 15:11:34,pending,North,Credit Card
+1695,74,146.47,2025-08-24 15:11:35,pending,West,Credit Card
+1696,11,364.73,2025-08-24 15:11:36,pending,North,Credit Card
+1697,73,374.41,2025-08-24 15:11:37,delivered,East,Credit Card
+1698,49,497.54,2025-08-24 15:11:38,pending,West,Credit Card
+1699,98,54.17,2025-08-24 15:11:39,delivered,West,PayPal
+1700,62,454.63,2025-08-24 15:11:40,shipped,South,PayPal
+1701,77,119.58,2025-08-24 15:11:41,pending,South,PayPal
+1702,58,304.59,2025-08-24 15:11:42,pending,East,Credit Card
+1703,89,64.91,2025-08-24 15:11:43,delivered,North,PayPal
+1704,7,435.37,2025-08-24 15:11:44,shipped,South,Bank Transfer
+1705,49,334.88,2025-08-24 15:11:45,shipped,West,Bank Transfer
+1706,40,250.55,2025-08-24 15:11:46,delivered,North,PayPal
+1707,72,230.09,2025-08-24 15:11:47,shipped,West,PayPal
+1708,77,358.99,2025-08-24 15:11:48,pending,North,Credit Card
+1709,62,99.3,2025-08-24 15:11:49,shipped,North,Bank Transfer
+1710,62,99.49,2025-08-24 15:11:50,delivered,North,Credit Card
+1711,64,308.98,2025-08-24 15:11:51,shipped,West,Bank Transfer
+1712,98,133.41,2025-08-24 15:11:52,pending,South,PayPal
+1713,7,468.05,2025-08-24 15:11:53,delivered,North,PayPal
+1714,52,345.75,2025-08-24 15:11:54,shipped,South,Bank Transfer
+1715,47,283.32,2025-08-24 15:11:55,shipped,North,Bank Transfer
+1716,15,207.24,2025-08-24 15:11:56,delivered,South,PayPal
+1717,91,156.96,2025-08-24 15:11:57,delivered,East,PayPal
+1718,91,396.2,2025-08-24 15:11:58,delivered,West,PayPal
+1719,66,402.58,2025-08-24 15:11:59,shipped,South,PayPal
+1720,6,214.91,2025-08-24 15:12:00,pending,West,Bank Transfer
+1721,65,466.91,2025-08-24 15:12:01,pending,East,Credit Card
+1722,52,472.48,2025-08-24 15:12:02,pending,North,Credit Card
+1723,14,430.11,2025-08-24 15:12:03,pending,West,Credit Card
+1724,95,151.42,2025-08-24 15:12:04,shipped,West,Credit Card
+1725,37,437.61,2025-08-24 15:12:05,pending,North,Credit Card
+1726,99,43.89,2025-08-24 15:12:06,shipped,West,PayPal
+1727,34,121.85,2025-08-24 15:12:07,delivered,East,Bank Transfer
+1728,69,49.05,2025-08-24 15:12:08,pending,South,Credit Card
+1729,23,195.37,2025-08-24 15:12:09,shipped,West,Bank Transfer
+1730,5,394.07,2025-08-24 15:12:10,delivered,North,PayPal
+1731,24,348.9,2025-08-24 15:12:11,pending,East,Credit Card
+1732,87,36.58,2025-08-24 15:12:12,shipped,East,Credit Card
+1733,6,86.51,2025-08-24 15:12:13,delivered,East,Credit Card
+1734,24,16.12,2025-08-24 15:12:14,pending,West,PayPal
+1735,34,357.72,2025-08-24 15:12:15,pending,South,Credit Card
+1736,80,151.91,2025-08-24 15:12:16,shipped,South,PayPal
+1737,80,125.2,2025-08-24 15:12:17,delivered,West,Credit Card
+1738,66,265.31,2025-08-24 15:12:18,pending,East,Credit Card
+1739,19,28.59,2025-08-24 15:12:19,pending,South,PayPal
+1740,9,322.58,2025-08-24 15:12:20,pending,South,PayPal
+1741,31,440.04,2025-08-24 15:12:21,pending,East,PayPal
+1742,13,353.52,2025-08-24 15:12:22,pending,West,Bank Transfer
+1743,1,107.6,2025-08-24 15:12:23,shipped,North,Bank Transfer
+1744,43,406.67,2025-08-24 15:12:24,shipped,North,PayPal
+1745,4,191.18,2025-08-24 15:12:25,delivered,West,PayPal
+1746,48,440.56,2025-08-24 15:12:26,delivered,South,Bank Transfer
+1747,91,10.06,2025-08-24 15:12:27,delivered,South,Credit Card
+1748,14,304.75,2025-08-24 15:12:28,shipped,East,PayPal
+1749,74,333.65,2025-08-24 15:12:29,shipped,South,PayPal
+1750,63,305.3,2025-08-24 15:12:30,delivered,South,PayPal
+1751,21,461.23,2025-08-24 15:12:31,shipped,East,PayPal
+1752,81,484.05,2025-08-24 15:12:32,delivered,West,PayPal
+1753,54,125.55,2025-08-24 15:12:33,pending,North,Credit Card
+1754,80,314.27,2025-08-24 15:12:34,pending,North,PayPal
+1755,22,489.37,2025-08-24 15:12:35,shipped,South,Bank Transfer
+1756,11,96.97,2025-08-24 15:12:36,delivered,South,Credit Card
+1757,86,150.76,2025-08-24 15:12:37,pending,South,Credit Card
+1758,40,247.76,2025-08-24 15:12:38,pending,West,Credit Card
+1759,99,47.07,2025-08-24 15:12:39,shipped,South,PayPal
+1760,99,17.37,2025-08-24 15:12:40,pending,West,Credit Card
+1761,41,289.65,2025-08-24 15:12:41,shipped,North,PayPal
+1762,100,114.39,2025-08-24 15:12:42,pending,North,Bank Transfer
+1763,13,33.45,2025-08-24 15:12:43,delivered,North,Bank Transfer
+1764,60,268.3,2025-08-24 15:12:44,pending,North,PayPal
+1765,19,247.28,2025-08-24 15:12:45,shipped,North,Bank Transfer
+1766,88,313.83,2025-08-24 15:12:46,shipped,South,Credit Card
+1767,96,99.58,2025-08-24 15:12:47,delivered,West,Credit Card
+1768,26,12.86,2025-08-24 15:12:48,delivered,North,Bank Transfer
+1769,36,491.27,2025-08-24 15:12:49,shipped,North,Bank Transfer
+1770,80,53.31,2025-08-24 15:12:50,shipped,East,Bank Transfer
+1771,85,35.24,2025-08-24 15:12:51,shipped,West,Credit Card
+1772,62,115.86,2025-08-24 15:12:52,delivered,North,Bank Transfer
+1773,76,332.82,2025-08-24 15:12:53,pending,East,Credit Card
+1774,55,143.76,2025-08-24 15:12:54,delivered,West,Credit Card
+1775,38,68.42,2025-08-24 15:12:55,shipped,East,Credit Card
+1776,37,185.02,2025-08-24 15:12:56,delivered,South,PayPal
+1777,14,278.93,2025-08-24 15:12:57,shipped,North,Credit Card
+1778,26,392.99,2025-08-24 15:12:58,pending,West,PayPal
+1779,98,459.37,2025-08-24 15:12:59,delivered,North,Credit Card
+1780,21,343.52,2025-08-24 15:13:00,delivered,East,PayPal
+1781,51,491.78,2025-08-24 15:13:01,shipped,West,PayPal
+1782,71,345.91,2025-08-24 15:13:02,delivered,East,PayPal
+1783,35,27.83,2025-08-24 15:13:03,shipped,North,Bank Transfer
+1784,18,151.1,2025-08-24 15:13:04,pending,East,Credit Card
+1785,11,484.45,2025-08-24 15:13:05,shipped,East,Bank Transfer
+1786,74,157.49,2025-08-24 15:13:06,delivered,North,Credit Card
+1787,63,285.97,2025-08-24 15:13:07,delivered,West,Bank Transfer
+1788,17,482.66,2025-08-24 15:13:08,shipped,West,Credit Card
+1789,64,295.5,2025-08-24 15:13:09,delivered,West,Bank Transfer
+1790,40,348.55,2025-08-24 15:13:10,pending,North,Bank Transfer
+1791,48,291.34,2025-08-24 15:13:11,shipped,East,Credit Card
+1792,94,420.76,2025-08-24 15:13:12,shipped,South,PayPal
+1793,17,252.86,2025-08-24 15:13:13,shipped,West,PayPal
+1794,37,420.27,2025-08-24 15:13:14,pending,West,Bank Transfer
+1795,30,379.03,2025-08-24 15:13:15,delivered,East,Credit Card
+1796,64,22.32,2025-08-24 15:13:16,delivered,West,Credit Card
+1797,35,243.09,2025-08-24 15:13:17,pending,West,PayPal
+1798,41,380.91,2025-08-24 15:13:18,delivered,East,Bank Transfer
+1799,21,474.85,2025-08-24 15:13:19,pending,North,Credit Card
+1800,46,203.26,2025-08-24 15:13:20,shipped,West,PayPal
+1801,20,326.77,2025-08-24 15:13:21,shipped,West,Bank Transfer
+1802,22,95.69,2025-08-24 15:13:22,shipped,South,PayPal
+1803,52,339.33,2025-08-24 15:13:23,pending,North,PayPal
+1804,5,254.07,2025-08-24 15:13:24,shipped,West,PayPal
+1805,34,459.51,2025-08-24 15:13:25,delivered,South,PayPal
+1806,90,99.28,2025-08-24 15:13:26,shipped,South,Bank Transfer
+1807,16,16.81,2025-08-24 15:13:27,delivered,East,PayPal
+1808,72,274.42,2025-08-24 15:13:28,shipped,South,Bank Transfer
+1809,93,190.15,2025-08-24 15:13:29,pending,West,Bank Transfer
+1810,52,80.4,2025-08-24 15:13:30,delivered,East,PayPal
+1811,57,216.18,2025-08-24 15:13:31,delivered,North,Bank Transfer
+1812,67,370.42,2025-08-24 15:13:32,shipped,North,PayPal
+1813,10,71.49,2025-08-24 15:13:33,shipped,North,PayPal
+1814,71,422.52,2025-08-24 15:13:34,delivered,South,PayPal
+1815,62,184.01,2025-08-24 15:13:35,delivered,South,Credit Card
+1816,91,23.0,2025-08-24 15:13:36,pending,South,PayPal
+1817,71,384.58,2025-08-24 15:13:37,shipped,North,PayPal
+1818,23,283.12,2025-08-24 15:13:38,shipped,South,Credit Card
+1819,55,26.58,2025-08-24 15:13:39,pending,East,Credit Card
+1820,89,13.17,2025-08-24 15:13:40,pending,East,Bank Transfer
+1821,44,362.67,2025-08-24 15:13:41,shipped,North,Credit Card
+1822,73,472.74,2025-08-24 15:13:42,pending,South,Bank Transfer
+1823,96,391.26,2025-08-24 15:13:43,pending,South,Credit Card
+1824,80,321.14,2025-08-24 15:13:44,pending,East,PayPal
+1825,62,356.63,2025-08-24 15:13:45,delivered,West,Bank Transfer
+1826,40,498.87,2025-08-24 15:13:46,pending,West,Credit Card
+1827,86,129.7,2025-08-24 15:13:47,shipped,West,Bank Transfer
+1828,33,259.2,2025-08-24 15:13:48,pending,West,PayPal
+1829,8,268.94,2025-08-24 15:13:49,shipped,North,Bank Transfer
+1830,7,289.41,2025-08-24 15:13:50,pending,West,PayPal
+1831,71,138.58,2025-08-24 15:13:51,shipped,North,Bank Transfer
+1832,94,491.2,2025-08-24 15:13:52,delivered,South,PayPal
+1833,84,342.8,2025-08-24 15:13:53,shipped,East,PayPal
+1834,95,290.29,2025-08-24 15:13:54,pending,East,PayPal
+1835,68,331.35,2025-08-24 15:13:55,delivered,South,Bank Transfer
+1836,33,235.3,2025-08-24 15:13:56,delivered,East,Credit Card
+1837,18,204.33,2025-08-24 15:13:57,delivered,East,Bank Transfer
+1838,39,451.18,2025-08-24 15:13:58,delivered,West,Bank Transfer
+1839,98,188.47,2025-08-24 15:13:59,pending,West,PayPal
+1840,4,226.35,2025-08-24 15:14:00,shipped,East,Credit Card
+1841,23,138.05,2025-08-24 15:14:01,shipped,North,PayPal
+1842,92,167.35,2025-08-24 15:14:02,pending,East,Bank Transfer
+1843,3,353.07,2025-08-24 15:14:03,shipped,East,Bank Transfer
+1844,40,130.01,2025-08-24 15:14:04,shipped,North,Bank Transfer
+1845,99,459.81,2025-08-24 15:14:05,pending,East,Bank Transfer
+1846,28,421.99,2025-08-24 15:14:06,shipped,East,PayPal
+1847,24,136.72,2025-08-24 15:14:07,shipped,North,Bank Transfer
+1848,90,474.72,2025-08-24 15:14:08,pending,North,PayPal
+1849,92,175.21,2025-08-24 15:14:09,pending,North,Bank Transfer
+1850,61,298.83,2025-08-24 15:14:10,delivered,East,Bank Transfer
+1851,25,86.23,2025-08-24 15:14:11,shipped,East,Bank Transfer
+1852,86,286.42,2025-08-24 15:14:12,pending,South,PayPal
+1853,13,66.53,2025-08-24 15:14:13,shipped,North,Credit Card
+1854,37,291.57,2025-08-24 15:14:14,pending,South,Credit Card
+1855,93,207.94,2025-08-24 15:14:15,delivered,East,Bank Transfer
+1856,33,120.0,2025-08-24 15:14:16,shipped,North,Bank Transfer
+1857,29,429.79,2025-08-24 15:14:17,shipped,East,PayPal
+1858,44,24.68,2025-08-24 15:14:18,shipped,South,PayPal
+1859,20,437.45,2025-08-24 15:14:19,delivered,East,PayPal
+1860,69,357.62,2025-08-24 15:14:20,shipped,South,Bank Transfer
+1861,79,382.26,2025-08-24 15:14:21,delivered,West,Bank Transfer
+1862,78,266.31,2025-08-24 15:14:22,shipped,North,Bank Transfer
+1863,34,229.64,2025-08-24 15:14:23,pending,West,Credit Card
+1864,62,265.89,2025-08-24 15:14:24,delivered,East,PayPal
+1865,43,355.58,2025-08-24 15:14:25,pending,North,Credit Card
+1866,96,467.34,2025-08-24 15:14:26,pending,South,Credit Card
+1867,70,362.86,2025-08-24 15:14:27,shipped,South,Bank Transfer
+1868,66,499.15,2025-08-24 15:14:28,pending,North,PayPal
+1869,35,305.32,2025-08-24 15:14:29,shipped,North,PayPal
+1870,32,16.37,2025-08-24 15:14:30,shipped,South,PayPal
+1871,37,79.77,2025-08-24 15:14:31,shipped,East,Bank Transfer
+1872,28,57.22,2025-08-24 15:14:32,delivered,North,PayPal
+1873,25,401.17,2025-08-24 15:14:33,shipped,South,PayPal
+1874,75,48.37,2025-08-24 15:14:34,pending,North,Credit Card
+1875,66,209.0,2025-08-24 15:14:35,pending,West,Credit Card
+1876,98,126.77,2025-08-24 15:14:36,delivered,North,Credit Card
+1877,6,156.01,2025-08-24 15:14:37,delivered,South,Bank Transfer
+1878,83,56.23,2025-08-24 15:14:38,shipped,East,Credit Card
+1879,37,60.94,2025-08-24 15:14:39,delivered,North,Credit Card
+1880,92,441.7,2025-08-24 15:14:40,pending,South,Bank Transfer
+1881,67,460.13,2025-08-24 15:14:41,shipped,North,PayPal
+1882,67,156.96,2025-08-24 15:14:42,shipped,West,Credit Card
+1883,55,344.75,2025-08-24 15:14:43,shipped,South,PayPal
+1884,27,95.74,2025-08-24 15:14:44,pending,West,PayPal
+1885,42,410.78,2025-08-24 15:14:45,shipped,South,Bank Transfer
+1886,13,136.82,2025-08-24 15:14:46,delivered,North,PayPal
+1887,1,33.72,2025-08-24 15:14:47,pending,North,PayPal
+1888,77,44.57,2025-08-24 15:14:48,delivered,North,PayPal
+1889,45,482.08,2025-08-24 15:14:49,pending,North,Credit Card
+1890,37,434.55,2025-08-24 15:14:50,delivered,East,Bank Transfer
+1891,99,425.41,2025-08-24 15:14:51,pending,West,Credit Card
+1892,30,352.23,2025-08-24 15:14:52,pending,West,Credit Card
+1893,57,434.4,2025-08-24 15:14:53,pending,South,Bank Transfer
+1894,9,91.64,2025-08-24 15:14:54,delivered,East,PayPal
+1895,64,47.93,2025-08-24 15:14:55,pending,East,Bank Transfer
+1896,48,152.67,2025-08-24 15:14:56,delivered,South,PayPal
+1897,95,393.04,2025-08-24 15:14:57,delivered,West,PayPal
+1898,8,158.16,2025-08-24 15:14:58,pending,East,PayPal
+1899,61,495.46,2025-08-24 15:14:59,shipped,North,Bank Transfer
+1900,29,475.74,2025-08-24 15:15:00,delivered,East,Credit Card
+1901,24,368.38,2025-08-24 15:15:01,delivered,North,Bank Transfer
+1902,89,57.08,2025-08-24 15:15:02,pending,South,Bank Transfer
+1903,42,24.7,2025-08-24 15:15:03,shipped,West,Bank Transfer
+1904,82,221.3,2025-08-24 15:15:04,pending,East,Bank Transfer
+1905,69,448.53,2025-08-24 15:15:05,delivered,South,Credit Card
+1906,52,471.57,2025-08-24 15:15:06,shipped,South,PayPal
+1907,73,240.09,2025-08-24 15:15:07,delivered,East,PayPal
+1908,27,311.26,2025-08-24 15:15:08,delivered,East,Credit Card
+1909,4,156.1,2025-08-24 15:15:09,delivered,East,Credit Card
+1910,82,80.73,2025-08-24 15:15:10,pending,West,PayPal
+1911,25,382.2,2025-08-24 15:15:11,shipped,East,Bank Transfer
+1912,96,470.31,2025-08-24 15:15:12,shipped,North,PayPal
+1913,70,319.61,2025-08-24 15:15:13,shipped,East,PayPal
+1914,16,427.31,2025-08-24 15:15:14,shipped,East,Credit Card
+1915,76,411.48,2025-08-24 15:15:15,pending,West,Credit Card
+1916,87,486.23,2025-08-24 15:15:16,pending,East,PayPal
+1917,66,473.52,2025-08-24 15:15:17,pending,North,PayPal
+1918,96,41.01,2025-08-24 15:15:18,delivered,East,Bank Transfer
+1919,77,424.87,2025-08-24 15:15:19,shipped,South,PayPal
+1920,93,473.19,2025-08-24 15:15:20,pending,South,PayPal
+1921,91,131.64,2025-08-24 15:15:21,delivered,South,PayPal
+1922,21,273.9,2025-08-24 15:15:22,pending,West,PayPal
+1923,64,408.98,2025-08-24 15:15:23,shipped,North,Bank Transfer
+1924,92,66.26,2025-08-24 15:15:24,delivered,East,Credit Card
+1925,48,324.35,2025-08-24 15:15:25,delivered,East,PayPal
+1926,55,386.86,2025-08-24 15:15:26,shipped,South,Credit Card
+1927,10,206.98,2025-08-24 15:15:27,shipped,West,Bank Transfer
+1928,53,353.23,2025-08-24 15:15:28,shipped,North,PayPal
+1929,59,42.67,2025-08-24 15:15:29,pending,West,PayPal
+1930,54,275.96,2025-08-24 15:15:30,shipped,East,PayPal
+1931,70,420.04,2025-08-24 15:15:31,delivered,North,PayPal
+1932,96,235.97,2025-08-24 15:15:32,shipped,West,PayPal
+1933,63,462.47,2025-08-24 15:15:33,delivered,West,Credit Card
+1934,53,148.3,2025-08-24 15:15:34,delivered,North,Credit Card
+1935,26,393.07,2025-08-24 15:15:35,shipped,East,Credit Card
+1936,44,412.41,2025-08-24 15:15:36,pending,West,Bank Transfer
+1937,84,461.49,2025-08-24 15:15:37,delivered,South,Bank Transfer
+1938,80,12.9,2025-08-24 15:15:38,shipped,East,Credit Card
+1939,33,360.37,2025-08-24 15:15:39,pending,East,Credit Card
+1940,36,303.65,2025-08-24 15:15:40,delivered,South,Credit Card
+1941,68,445.95,2025-08-24 15:15:41,pending,East,Bank Transfer
+1942,3,153.09,2025-08-24 15:15:42,delivered,North,PayPal
+1943,72,498.42,2025-08-24 15:15:43,pending,South,Bank Transfer
+1944,44,234.48,2025-08-24 15:15:44,pending,South,PayPal
+1945,9,176.09,2025-08-24 15:15:45,delivered,North,PayPal
+1946,90,187.84,2025-08-24 15:15:46,pending,South,PayPal
+1947,94,81.7,2025-08-24 15:15:47,shipped,West,Credit Card
+1948,25,282.08,2025-08-24 15:15:48,pending,North,Bank Transfer
+1949,68,84.69,2025-08-24 15:15:49,pending,East,Credit Card
+1950,72,473.01,2025-08-24 15:15:50,shipped,West,PayPal
+1951,11,237.78,2025-08-24 15:15:51,pending,West,Bank Transfer
+1952,5,243.08,2025-08-24 15:15:52,shipped,North,Credit Card
+1953,46,374.58,2025-08-24 15:15:53,shipped,East,PayPal
+1954,76,258.1,2025-08-24 15:15:54,shipped,South,Credit Card
+1955,54,444.81,2025-08-24 15:15:55,delivered,East,PayPal
+1956,19,294.2,2025-08-24 15:15:56,pending,North,Bank Transfer
+1957,32,289.4,2025-08-24 15:15:57,pending,South,Credit Card
+1958,41,384.39,2025-08-24 15:15:58,delivered,South,PayPal
+1959,75,14.04,2025-08-24 15:15:59,shipped,North,PayPal
+1960,5,461.83,2025-08-24 15:16:00,delivered,East,PayPal
+1961,43,178.24,2025-08-24 15:16:01,delivered,North,Credit Card
+1962,51,420.57,2025-08-24 15:16:02,delivered,East,PayPal
+1963,32,326.34,2025-08-24 15:16:03,shipped,South,PayPal
+1964,77,395.09,2025-08-24 15:16:04,delivered,East,Credit Card
+1965,17,156.08,2025-08-24 15:16:05,shipped,West,PayPal
+1966,40,84.43,2025-08-24 15:16:06,delivered,North,Bank Transfer
+1967,41,416.06,2025-08-24 15:16:07,pending,North,Credit Card
+1968,9,365.98,2025-08-24 15:16:08,shipped,East,Credit Card
+1969,58,341.72,2025-08-24 15:16:09,delivered,North,PayPal
+1970,84,419.59,2025-08-24 15:16:10,shipped,East,Credit Card
+1971,27,412.15,2025-08-24 15:16:11,pending,East,PayPal
+1972,84,245.44,2025-08-24 15:16:12,pending,West,Credit Card
+1973,81,308.26,2025-08-24 15:16:13,shipped,North,PayPal
+1974,78,197.74,2025-08-24 15:16:14,delivered,North,PayPal
+1975,18,125.5,2025-08-24 15:16:15,pending,East,Bank Transfer
+1976,2,354.27,2025-08-24 15:16:16,shipped,South,PayPal
+1977,31,162.68,2025-08-24 15:16:17,pending,North,Credit Card
+1978,52,445.67,2025-08-24 15:16:18,delivered,West,Credit Card
+1979,97,462.28,2025-08-24 15:16:19,delivered,West,Bank Transfer
+1980,64,402.94,2025-08-24 15:16:20,delivered,East,Bank Transfer
+1981,8,206.73,2025-08-24 15:16:21,pending,East,PayPal
+1982,19,22.56,2025-08-24 15:16:22,delivered,North,Credit Card
+1983,98,238.45,2025-08-24 15:16:23,delivered,North,PayPal
+1984,88,178.46,2025-08-24 15:16:24,delivered,North,Credit Card
+1985,93,252.26,2025-08-24 15:16:25,pending,East,PayPal
+1986,59,171.94,2025-08-24 15:16:26,delivered,North,Credit Card
+1987,57,53.37,2025-08-24 15:16:27,pending,South,Bank Transfer
+1988,45,237.75,2025-08-24 15:16:28,delivered,East,PayPal
+1989,11,256.13,2025-08-24 15:16:29,pending,East,Bank Transfer
+1990,25,466.97,2025-08-24 15:16:30,delivered,East,Credit Card
+1991,75,319.41,2025-08-24 15:16:31,delivered,North,Bank Transfer
+1992,16,154.29,2025-08-24 15:16:32,pending,East,Credit Card
+1993,38,324.41,2025-08-24 15:16:33,pending,West,Bank Transfer
+1994,66,39.15,2025-08-24 15:16:34,shipped,West,PayPal
+1995,30,185.06,2025-08-24 15:16:35,delivered,West,PayPal
+1996,16,306.79,2025-08-24 15:16:36,delivered,North,Credit Card
+1997,63,280.72,2025-08-24 15:16:37,delivered,North,Credit Card
+1998,68,414.33,2025-08-24 15:16:38,delivered,East,Bank Transfer
+1999,66,62.54,2025-08-24 15:16:39,pending,South,Bank Transfer

@@ -1,10 +1,18 @@
-name: 'lakehouse_dbt'
-version: '1.0.0'
-profile: 'prod'
-model-paths: ['models']
-analysis-paths: ['analyses']
-test-paths: ['tests']
-seed-paths: ['seeds']
-macro-paths: ['macros']
-snapshot-paths: ['snapshots']
-clean-targets: ['target', 'dbt_packages']
+name: lakehouse_dbt
+version: '1.0'
+profile: lakehouse_dbt
+
+model-paths: ["models"]
+
+seed-paths: ["data"]
+
+target-path: "target"
+clean-targets: ["target"]
+
+models:
+  lakehouse_dbt:
+    +materialized: table
+
+seeds:
+  lakehouse_dbt:
+    +schema: raw

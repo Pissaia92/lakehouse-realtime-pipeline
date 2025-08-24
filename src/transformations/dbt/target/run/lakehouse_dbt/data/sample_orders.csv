@@ -1,0 +1,13 @@
+
+    
+    
+    
+    create table "dev"."lakehouse_raw"."sample_orders" ("order_id" integer,"customer_id" integer,"amount" float8,"created_at" timestamp without time zone,"status" text,"region" text,"payment_method" text)
+  ;
+    -- dbt seed --
+    
+          COPY "dev"."lakehouse_raw"."sample_orders" FROM '/app/data/sample_orders.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        
+
+;
+  
