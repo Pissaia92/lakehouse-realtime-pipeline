@@ -1,0 +1,10 @@
+{
+  "framework": "next",
+  "outputDirectory": "nextjs-dashboard/out",
+  "build": {
+    "command": "cd nextjs-dashboard && npm run build"
+  },
+  "server": {
+    "port": 3000
+  }
+}
