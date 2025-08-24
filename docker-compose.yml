@@ -38,7 +38,21 @@ services:
       ZOOKEEPER_TICK_TIME: 2000
     networks:
       - lakehouse-net
-  
+
+  generator:
+    image: python:3.12-slim
+    depends_on:
+      - kafka
+    volumes:
+      - ./src/ingestion:/app
+    command: >
+      bash -c "
+      pip install kafka-python &&
+      python3 /app/generate_sample_data.py
+      "
+    networks:
+      - lakehouse-net
+
   flink:
     image: flink:1.18-scala_2.12
     ports:
@@ -63,8 +77,8 @@ services:
       - ./data/iceberg:/data/iceberg
     environment:
       MINIO_ENDPOINT: http://minio:9000
-      MINIO_ACCESS_KEY: minioadmin
-      MINIO_SECRET_KEY: minioadmin
+      MINIO_ACCESS_KEY_ID: minioadmin
+      MINIO_SECRET_ACCESS_KEY: minioadmin
       ICEBERG_TABLE_NAME: orders
     networks:
       - lakehouse-net
@@ -147,34 +161,6 @@ services:
     networks:
       - lakehouse-net
 
-  telegram-bot:
-    image: python:3.12-slim
-    depends_on:
-      - dbt
-    volumes:
-      - ./src/notifications:/app
-    command: >
-      bash -c "
-      pip install requests &&
-      python3 /app/send_telegram.py
-      "
-    networks:
-      - lakehouse-net
-
 networks:
   lakehouse-net:
     driver: bridge
-
-generator:
-  image: python:3.12-slim
-  depends_on:
-    - kafka
-  volumes:
-    - ./src/ingestion:/app
-  command: >
-    bash -c "
-    pip install kafka-python &&
-    python3 /app/generate_sample_data.py
-    "
-  networks:
-    - lakehouse-net    
