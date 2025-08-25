@@ -145,18 +145,30 @@ services:
       - lakehouse-net
 
   loader:
-    image: python:3.12-slim
-    depends_on:
-      - kafka
-    command: >
-      bash -c "
-      pip install pandas kafka-python &&
-      python3 /app/load_sample_data.py
-      "
-    volumes:
-      - ./src/ingestion:/app
-    networks:
-      - lakehouse-net
+  image: python:3.12-slim
+  depends_on:
+    - kafka
+  command: >
+    bash -c "
+    pip install pandas kafka-python &&
+    python3 /app/load_sample_data.py
+    "
+  volumes:
+    - ./src/ingestion:/app
+    - ./data:/data
+  networks:
+    - lakehouse-net
+
+generator:
+  build:
+    context: .
+    dockerfile: Dockerfile.generator
+  depends_on:
+    - kafka
+  volumes:
+    - ./data:/data
+  networks:
+    - lakehouse-net
 
 networks:
   lakehouse-net:

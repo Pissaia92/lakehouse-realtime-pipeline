@@ -8,6 +8,6 @@ RUN pip install kafka-python pandas
 WORKDIR /app
 
 COPY generate_sample_data.py .
-COPY data/sample_orders.csv ./data/
+COPY data/sample_orders.csv /app/sample_orders.csv
 
 CMD ["python", "generate_sample_data.py"]

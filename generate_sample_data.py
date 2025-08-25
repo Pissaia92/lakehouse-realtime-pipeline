@@ -6,28 +6,20 @@ import os
 
 print("🚀 Iniciando generator com kafka-python...")
 
-producer = KafkaProducer(
-    bootstrap_servers = "172.18.0.3:9092",
-    value_serializer=lambda v: json.dumps(v).encode('utf-8'),
-    request_timeout_ms=30000,  # 30 segundos
-    retry_backoff_ms=1000,
-    metadata_max_age_ms=30000
-)
+# Configurações - DEFINIR ANTES DE USAR
+topic = "orders-topic"  # ← USAR O MESMO TÓPICO QUE SEU TESTE
+file_path = "/data/sample_orders.csv"  # ← PATH CORRETO DENTRO DO CONTAINER
 
-# Configurações
-topic = "orders"
-bootstrap_servers = "kafka:9092"
-file_path = "/app/data/sample_orders.csv"
-
-print(f"📡 Conectando ao Kafka: {bootstrap_servers}")
+print(f"📡 Conectando ao Kafka: kafka:9092")
 print(f"📂 Lendo arquivo: {file_path}")
 
 try:
-    # Criar producer
+    # Criar producer APENAS UMA VEZ
     producer = KafkaProducer(
-        bootstrap_servers=bootstrap_servers,
+        bootstrap_servers='kafka:9092',  # ← CORRETO
         value_serializer=lambda v: json.dumps(v).encode('utf-8'),
-        request_timeout_ms=30000
+        request_timeout_ms=30000,
+        retries=3  # ← ADICIONAR RETRIES
     )
     print("✅ Producer criado com sucesso!")
     
@@ -36,20 +28,37 @@ except Exception as e:
     exit(1)
 
 try:
+    # Verificar se arquivo existe
+    if not os.path.exists(file_path):
+        print(f"❌ Arquivo não encontrado: {file_path}")
+        print("📋 Listando diretório /data:")
+        if os.path.exists('/data'):
+            print(f"   Conteúdo de /data: {os.listdir('/data')}")
+        else:
+            print("   ❌ Diretório /data não existe")
+        exit(1)
+    
     # Carregar dados
     df = pd.read_csv(file_path)
-    print(f"✅ CSV carregado: {len(df)} linhas")
+    print(f"✅ CSV carregado: {len(df)} linhas, {len(df.columns)} colunas")
+    print(f"📊 Colunas: {list(df.columns)}")
     
     # Enviar dados
     for i, row in df.iterrows():
         data = row.to_dict()
         producer.send(topic, value=data)
+        
         if i % 10 == 0:  # Log a cada 10 linhas
             print(f"📤 Enviada linha {i}: {data}")
-        time.sleep(0.1)
+            
+        time.sleep(0.1)  # Pequena pausa
     
     producer.flush()
-    print("🎉 Todos os dados enviados com sucesso!")
+    print(f"🎉 Todos os {len(df)} dados enviados para o tópico '{topic}'!")
     
 except Exception as e:
     print(f"❌ Erro durante o processamento: {e}")
+    import traceback
+    traceback.print_exc()
+finally:
+    producer.close()

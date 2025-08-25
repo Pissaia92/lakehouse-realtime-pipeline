@@ -14,7 +14,7 @@ while True:
 
 print("Kafka is ready!")
 
-with open('/app/sample_orders.json', 'r') as f:
+with open('/data/sample_orders.csv', 'r') as f:
     data = json.load(f)
 
 for item in data:
