@@ -6,20 +6,19 @@ import os
 
 print("🚀 Iniciando generator com kafka-python...")
 
-# Configurações - DEFINIR ANTES DE USAR
-topic = "orders-topic"  # ← USAR O MESMO TÓPICO QUE SEU TESTE
-file_path = "/data/sample_orders.csv"  # ← PATH CORRETO DENTRO DO CONTAINER
+topic = "orders-topic"  
+file_path = "/data/sample_orders.csv"  
 
 print(f"📡 Conectando ao Kafka: kafka:9092")
 print(f"📂 Lendo arquivo: {file_path}")
 
 try:
-    # Criar producer APENAS UMA VEZ
+    
     producer = KafkaProducer(
-        bootstrap_servers='kafka:9092',  # ← CORRETO
+        bootstrap_servers='kafka:9092',  
         value_serializer=lambda v: json.dumps(v).encode('utf-8'),
         request_timeout_ms=30000,
-        retries=3  # ← ADICIONAR RETRIES
+        retries=3 
     )
     print("✅ Producer criado com sucesso!")
     
@@ -51,7 +50,7 @@ try:
         if i % 10 == 0:  # Log a cada 10 linhas
             print(f"📤 Enviada linha {i}: {data}")
             
-        time.sleep(0.1)  # Pequena pausa
+        time.sleep(0.1) 
     
     producer.flush()
     print(f"🎉 Todos os {len(df)} dados enviados para o tópico '{topic}'!")
