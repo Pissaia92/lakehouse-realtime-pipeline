@@ -160,14 +160,17 @@ services:
     - lakehouse-net
 
 generator:
-  build:
-    context: .
-    dockerfile: Dockerfile.generator
-  depends_on:
-    - kafka
-  volumes:
-    - ./data:/data
-  networks:
-    - lakehouse-net
-  driver: bridge
+    build:
+      context: .
+      dockerfile: Dockerfile.generator
+    depends_on:
+      - kafka
+    volumes:
+      - ./data:/data
+    networks:
+      - lakehouse-net
+
+networks:
+  lakehouse-net:
+    driver: bridge 
 
