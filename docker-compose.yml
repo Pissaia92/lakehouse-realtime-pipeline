@@ -16,16 +16,16 @@ services:
   kafka:
     image: bitnami/kafka:latest
     environment:
-      KAFKA_CFG_PROCESS_ROLES: controller,broker
+      KAFKA_CFG_PROCESS_ROLES: "controller,broker"
       KAFKA_CFG_NODE_ID: "1"
-      KAFKA_CFG_LISTENER_SECURITY_PROTOCOL_MAP: CONTROLLER:PLAINTEXT,PLAINTEXT:PLAINTEXT
-      KAFKA_CFG_LISTENERS: PLAINTEXT://0.0.0.0:9092,CONTROLLER://0.0.0.0:9093
-      KAFKA_CFG_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092
-      KAFKA_CFG_CONTROLLER_LISTENER_NAMES: CONTROLLER
-      KAFKA_CFG_CONTROLLER_QUORUM_VOTERS: 1@kafka:9093
+      KAFKA_CFG_LISTENER_SECURITY_PROTOCOL_MAP: "CONTROLLER:PLAINTEXT,PLAINTEXT:PLAINTEXT"
+      KAFKA_CFG_LISTENERS: "PLAINTEXT://0.0.0.0:9092,CONTROLLER://0.0.0.0:9093"
+      KAFKA_CFG_ADVERTISED_LISTENERS: "PLAINTEXT://kafka:9092"  # ← MUDAR PARA 'kafka'
+      KAFKA_CFG_CONTROLLER_LISTENER_NAMES: "CONTROLLER"
+      KAFKA_CFG_CONTROLLER_QUORUM_VOTERS: "1@kafka:9093"
       KAFKA_CFG_AUTO_CREATE_TOPICS_ENABLE: "true"
     ports:
-      - 9092:9092
+      - "9092:9092"
     networks:
       - lakehouse-net
   zookeeper:
@@ -46,6 +46,7 @@ services:
       - ./data:/data
     networks:
       - lakehouse-net
+    entrypoint: [ "bash", "-c", "sleep 30 && python /app/generate_sample_data.py" ]
   flink:
     image: flink:1.18-scala_2.12
     depends_on:
