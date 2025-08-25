@@ -169,7 +169,5 @@ generator:
     - ./data:/data
   networks:
     - lakehouse-net
+  driver: bridge
 
-networks:
-  lakehouse-net:
-    driver: bridge
