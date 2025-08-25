@@ -1,6 +1,5 @@
-import pandas as pd
-from kafka import KafkaProducer
 import json
+from kafka import KafkaProducer
 import time
 
 # Espera o Kafka iniciar
@@ -15,24 +14,12 @@ while True:
 
 print("Kafka is ready!")
 
-df = pd.read_csv('/app/sample_orders.csv')
+with open('/app/sample_orders.json', 'r') as f:
+    data = json.load(f)
 
-for _, row in df.iterrows():
-    data = {
-        "op": "c",
-        "before": None,
-        "after": {
-            "order_id": int(row['order_id']),
-            "customer_id": int(row['customer_id']),
-            "amount": float(row['amount']),
-            "created_at": row['created_at'],
-            "status": row['status'],
-            "region": row['region'],
-            "payment_method": row['payment_method']
-        }
-    }
-    producer.send('orders.orders_server.public.orders', value=data)
-    print(f"Sent: {data['after']}")
+for item in data:
+    producer.send('orders.orders_server.public.orders', value=item)
+    print(f"Sent: {item}")
     time.sleep(0.5)
 
 producer.flush()
